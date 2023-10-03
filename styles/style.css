@@ -7,7 +7,7 @@ body {
 
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
-.header {
+header {
     position: sticky;
     top: 0;
     display: flex; /* Utiliza flexbox para organizar los elementos en fila */
@@ -159,6 +159,18 @@ body {
 .header .redes-sociales li:hover .linkedin-link:hover {
     opacity: 1; /* Muestra el enlace completamente cuando hagas hover sobre él */
 }
+
+.header .redes-sociales .nombres{
+    display: flex;
+    
+    
+}
+
+.header .redes-sociales h5{
+    margin-right: 10px;
+    flex-direction: row;
+    display: inline-block;
+} 
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
