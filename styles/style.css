@@ -233,6 +233,13 @@ section {
     max-height: 100%;
 }
 
+.featured-recipe .brochet-guanaco{
+    max-width: 800px;
+    height: auto;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
 .latest-recipes {
     display: flex;
     flex-direction: column; /* Coloca los elementos en una columna */
