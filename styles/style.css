@@ -270,6 +270,29 @@ section {
 
 }
 
+/* Estilos para el main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilos para el contenedor de recetas */
+.latest-recipes .recipe-container {
+    display: flex; /* Utiliza flexbox para alinear los artículos en fila */
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila */
+    justify-content: space-between; /* Distribuye los artículos con espacio entre ellos */
+    gap: 20px; /* Espacio entre los artículos */
+}
+
+/* Estilos para los artículos en "Últimas Recetas" */
+.latest-recipes article {
+    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos */
+}
+
+/* Estilos pra el Footer */
+
 footer {
     display: flex; /* Habilita el modelo de caja flexible */
     justify-content: center; /* Centra horizontalmente los elementos en el footer */
@@ -297,80 +320,23 @@ footer p {
     margin-right: 200px; /* Elimina el margen predeterminado para el párrafo */
 }
 
-/*/////////////////////////////////////////////////////////// ESTILOS PARA EL MAIN ///////////////////////////////////////////////////////////////////////*/
-
-/* Estilos para el main */
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
-    gap: 20px; /* Espacio entre los elementos */
-}
-
-/* Estilos para el contenedor de recetas */
-.latest-recipes .recipe-container {
-    display: flex; /* Utiliza flexbox para alinear los artículos en fila */
-    flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila */
-    justify-content: space-between; /* Distribuye los artículos con espacio entre ellos */
-    gap: 20px; /* Espacio entre los artículos */
-}
-
-/* Estilos para los artículos en "Últimas Recetas" */
-.latest-recipes article {
-    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos */
-}
-
-/************************************************************* FIN ESTILOS PARA EL MAIN **************************************************************************/
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Apila elementos verticalmente */
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
-        height: 350px;
-        width: auto;
-    }
-}
-
-.latest-recipes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.latest-recipes .recipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.latest-recipes article {
-    flex: 0 0 calc(50% - 20px);
-    margin-bottom: 20px;
-    background-color: #FEFAE0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-@media (max-width: 768px) {
-    .latest-recipes article {
-        flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
-    }
-}
-
-/************************************************** ESTILOS DEL FORMULARIO *************************************************************/
-
 /* Estilo para el formulario */
+#contenedor-formulario {
+    display: grid;
+}
+
 #formulario-contacto {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #CCD5AE;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+#formulario-contacto h2{
+    text-align: center;
+
 }
 
 /* Estilo para las etiquetas de los campos */
@@ -411,4 +377,45 @@ input[type="submit"]:hover {
     text-decoration: none;
 
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Apila elementos verticalmente */
+        text-align: center;
+    }
+
+    .redes-sociales {
+        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
+        height: 350px;
+        width: auto;
+    }
+}
+
+.latest-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-recipes .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.latest-recipes article {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #FEFAE0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .latest-recipes article {
+        flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
+    }
+}
+
+
 
