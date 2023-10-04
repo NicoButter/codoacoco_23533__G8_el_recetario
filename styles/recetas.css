@@ -1,0 +1,31 @@
+.listado-recetas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    padding: 20px;
+  }
+  
+  .receta {
+    border: 1px solid black;    
+    text-align: center;
+    height: 350px;
+    width: 300px;
+    background-color: #CCD5AE;
+  }
+
+  .receta-imagen {
+    object-fit: cover;
+    height: 80%;
+    width: 100%;
+    border: 1px solid black;
+    transition: all 0.5s;
+  }
+  .receta-imagen:hover {
+    transform: scale(0.8);
+    
+  }
+  .receta-nombre {
+    font-size: 20px;
+    font-weight: bolder;
+  }
