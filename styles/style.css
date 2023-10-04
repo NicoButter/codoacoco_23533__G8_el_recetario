@@ -15,9 +15,9 @@ header {
     align-items: center; /* Centra verticalmente los elementos */
     background-color: #CCD5AE;
     color: #fff;
-    transition: all 0.5s; /* Transición suave de la propiedad de relleno (padding) */
+    transition: all 0.5s; /* Transición suave dl padding */
     padding: 5px;
-    height: 150px; /* Ajusta la altura*/
+    height: 150px; /* altura*/
     z-index: 2;
 }
 
@@ -37,30 +37,31 @@ header {
 }
 
 .header nav {
-    /* Estilos para el nav aquí */
-    order: 5; /* Cambia el orden para que esté debajo del título */
+    order: 5; /* Cambia el orden para que esté debajo del título ese no  se como me salio*/
 }
 
-/* Estilos para el header cuando se encoge (shrink) */
+/* Estilos para el header cuando se achica (shrink) */
 .header.shrink {
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
     height: 100px; /* Permite que la altura se ajuste automáticamente */
 }
 
-/* Estilo adicional para el título cuando el header se encoge */
+/* Estilo adicional para el título cuando el header se achica  */
+
 .header.shrink .title h1 {
-    font-size: 50px; /* Cambia el tamaño del título cuando el header se encoge */
+    font-size: 50px; /* Cambia el tamaño del título cuando el header se achica */
 }
 
 .header.shrink .logo img {
-    width: 100px; /* Reduce el tamaño del logo */
+    width: 100px; /* Reduce el tamaño del logo, que me quedo lindo*/
 }
 
 .header.shrink .redes-sociales {
     margin-right: 80px;
 }
 
-/* Estilo para los links de las redes sociales*/
+/* Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno*/
+
 .header .redes-sociales{
     margin-right: 20px;
     transition: all 0.3s;
@@ -131,15 +132,15 @@ header {
 }
 
 .header .redes-sociales li span img{
-    width: 75px; /* Establece el ancho deseado */
-    height: 75px; /* Establece la altura deseada (mismo valor que el ancho para que sea redonda) */
-    border-radius: 50%; /* Aplica un radio de borde del 50% para que la imagen sea redonda */
+    width: 75px; /* Establece el ancho */
+    height: 75px; /* Establece la altura (mismo valor que el ancho para que sea redonda) */
+    border-radius: 50%; /* radio de borde del 50% para que la imagen sea redonda */
     object-fit: cover; /* Ajusta la imagen dentro del espacio redondo */
     z-index: 1;
 }
 
 .header .redes-sociales li:hover .linkedin-link {
-    display: block; /* Muestra el enlace a LinkedIn cuando se realiza un hover */
+    display: block; 
     position: absolute; /* Coloca el enlace encima de la foto */
     top: 0;
     left: 0;
@@ -152,12 +153,12 @@ header {
     line-height: 100px; /* Alinea verticalmente el texto */
     text-decoration: none; /* Quita el subrayado del enlace */
     transition: opacity 0.3s; /* Agrega una transición de opacidad */
-    z-index: 8; /* Coloca el enlace encima de los elementos de redes sociales */
-    opacity: 0; /* Inicialmente, el enlace está oculto */
+    z-index: 8; /* Coloca el enlace encima de los elementos "redes sociales" que no lo son en realidad */
+    opacity: 0; /* Inicialmente, el enlace está oculto, magia */
 }
 
 .header .redes-sociales li:hover .linkedin-link:hover {
-    opacity: 1; /* Muestra el enlace completamente cuando hagas hover sobre él */
+    opacity: 1; /* Muestra el enlace completamente con el hover */
 }
 
 .header .redes-sociales .nombres{
@@ -204,7 +205,7 @@ nav a:hover {
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
-    min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer */
+    min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer, hay que revisar esto */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -255,8 +256,8 @@ section {
 .latest-recipes {
     display: flex;
     flex-direction: column; /* Coloca los elementos en una columna */
-    /*align-items: center; /* Centra horizontalmente los elementos */
-    /*text-align: center; /* Centra el texto dentro de los elementos */
+    /*align-items: center; */
+    /*text-align: center; */
 }
 
 .latest-recipes img{
@@ -283,6 +284,7 @@ section {
 }
 
 /* Estilos para el main */
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -291,6 +293,7 @@ main {
 }
 
 /* Estilos para el contenedor de recetas */
+
 .latest-recipes .recipe-container {
     display: flex; /* Utiliza flexbox para alinear los artículos en fila */
     flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila */
@@ -299,6 +302,7 @@ main {
 }
 
 /* Estilos para los artículos en "Últimas Recetas" */
+
 .latest-recipes article {
     flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos */
 }
@@ -315,6 +319,7 @@ footer {
 }
 
 /* Estilos para la imagen */
+
 footer .logo-grupo {
     max-width: 130px; /* Establece el ancho máximo deseado para la imagen */
     margin-right: 200px; /* Agrega un margen derecho para separar la imagen del texto */
@@ -327,12 +332,13 @@ footer .logo-codo-a-codo {
     padding: 5px;
 }
 
-/* Estilos para el texto del pie de página */
+/* Estilos para el texto del footer */
+
 footer p {
     margin-right: 200px; /* Elimina el margen predeterminado para el párrafo */
 }
 
-/* Estilo para el formulario */
+/* Estilos para el formulario */
 #contenedor-formulario {
     display: grid;
 }
@@ -352,13 +358,15 @@ footer p {
 }
 
 /* Estilo para las etiquetas de los campos */
+
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-/* Estilo para los campos de entrada de texto y textarea */
+/* Estilo para los campos de entrada */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -369,7 +377,8 @@ textarea {
     border-radius: 3px;
 }
 
-/* Estilo para el botón de envío */
+/* Estilo para el botón */
+
 input[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -380,6 +389,7 @@ input[type="submit"] {
 }
 
 /* Estilo para el botón de envío al pasar el mouse sobre él */
+
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
@@ -428,6 +438,3 @@ input[type="submit"]:hover {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
 }
-
-
-
