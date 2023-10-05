@@ -1,0 +1,25 @@
+.featured-recipe-nicolas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, auto) 1fr; /* Tres filas en la primera columna, una fila en la segunda */
+    grid-gap: 10px; /* Espacio entre las celdas del grid */
+    height: 300px; /* Altura opcional para el ejemplo */
+}
+
+.item-featured-reciped-nicolas {
+    background-color: #FEFAE0;
+    padding: 20px;
+}
+
+.item-featured-reciped-foto-nicolas {
+    background-color: #FEFAE0;
+    padding: 20px;
+    grid-column: 2 / span 1; /* Ocupa la segunda columna */
+    grid-row: 1 / span 3; /* Ocupa tres filas en la primera columna */
+}
+
+.item-featured-reciped-foto-nicolas img{
+    max-width: 250px;
+    max-height: auto;
+    border-radius: 50%;
+}

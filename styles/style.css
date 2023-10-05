@@ -7,33 +7,43 @@ body {
 
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
-header {
+.header {
     position: sticky;
     top: 0;
-    display: flex; /* Utiliza flexbox para organizar los elementos en fila */
-    justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
-    align-items: center; /* Centra verticalmente los elementos */
-    background-color: #CCD5AE;
-    color: #fff;
-    transition: all 0.5s; /* Transición suave dl padding */
-    padding: 5px;
-    height: 150px; /* altura*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 0.5s; /* Transición suave dl padding */ 
+    height: 190px; /* altura */
     z-index: 2;
+    background-color: #CCD5AE;
+
+
+    /*display: flex; /* Utiliza flexbox para organizar los elementos en fila */
+    /*grid-auto-rows:  600px;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado 
+    align-items: center; /* Centra verticalmente los elementos 
+    
+    color: #fff;*/
+}  
+
+.header .logo{
+    align-items: center;
 }
 
 .header .logo img {
-    width: 150px;
+    width: 180px;
     height: auto;
     transition: all 0.3s;
-    margin-left: 15px;
+    /*margin-left: 25px;*/
 }
 
 /* Estilos para el título dentro del encabezado */
 .header .title h1 {
     color: rgb(31, 49, 2);
-    font-size: 45px;
+    font-size: 65px;
     transition: all 0.5s;
-    margin-left: 80px;
+    /*margin-left: 80px;*/
+    align-items: center;
 }
 
 .header nav {
@@ -41,9 +51,10 @@ header {
 }
 
 /* Estilos para el header cuando se achica (shrink) */
+
 .header.shrink {
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: 100px; /* Permite que la altura se ajuste automáticamente */
+    height: 130px; /* Permite que la altura se ajuste automáticamente */
 }
 
 /* Estilo adicional para el título cuando el header se achica  */
@@ -57,20 +68,29 @@ header {
 }
 
 .header.shrink .redes-sociales {
-    margin-right: 80px;
+    margin-right: 250px;
+}
+
+.header.shrink .redes-sociales .nombres {
+    opacity: 0;
+    display: none;
 }
 
 /* Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno*/
 
 .header .redes-sociales{
+    margin-top: 25px;
     margin-right: 20px;
     transition: all 0.3s;
 }
 
 .header .redes-sociales ul {
-    position : relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    /*position : relative;
     display: flex;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d;*/
 }
 
 .header .redes-sociales li{
@@ -162,15 +182,20 @@ header {
 }
 
 .header .redes-sociales .nombres{
-    display: flex;
     
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2px;
     
+    /*display: flex;
+    object-fit: cover;*/
 }
 
 .header .redes-sociales h5{
-    margin-right: 10px;
+    text-align: center;
+    /*margin-right: 10px;
     flex-direction: row;
-    display: inline-block;
+    display: inline-block;*/
 } 
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
@@ -181,9 +206,9 @@ nav {
     padding: 0px;
     top: 0px;
 }
+
 nav ul {
     list-style-type: none;
-
     text-align: center;
 }
 
@@ -205,38 +230,28 @@ nav a:hover {
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
+    padding: 20px;
     min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer, hay que revisar esto */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
     text-align: center;
 }
 
-section {
-    margin: 20px auto; /* Margen superior e inferior para separar los elementos */
-    max-width: 600px; /* Ancho máximo para evitar que los elementos se ensanchen demasiado */
-}
-
 .featured-recipe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%; /* Establece el ancho al 100% */
-    max-width: 100%; /* Establece el ancho máximo al 100% */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .featured-recipe img {
     max-width: 450px;
     height: auto;
-    margin-left: 150px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
 }
 
 .featured-recipe img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
 .featured-recipe h2 {
@@ -261,8 +276,10 @@ section {
 }
 
 .latest-recipes img{
-    max-width: 800px;
+    max-width: 100%;
     height: auto;
+    /*max-width: 800px;
+    height: auto;*/
 }
 
 .latest-recipes article {
@@ -271,6 +288,7 @@ section {
     background-color: #FEFAE0; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    align-items: center;
 }
 
 .latest-recipes article:hover {
@@ -283,7 +301,7 @@ section {
 
 }
 
-/* Estilos para el main */
+/************************************************************************** Estilos para el main ********************************************************************/
 
 main {
     display: flex;
@@ -438,3 +456,4 @@ input[type="submit"]:hover {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
 }
+
