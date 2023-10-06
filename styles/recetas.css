@@ -1,3 +1,18 @@
+.navegacion{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+}
+.ruta{
+  text-align: left;
+}
+.ruta ul {
+    list-style: none;
+}
+.ruta ul li{
+    display: inline-block;
+
+}
 .listado-recetas {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -12,20 +27,35 @@
     height: 350px;
     width: 300px;
     background-color: #CCD5AE;
+    
   }
 
   .receta-imagen {
-    object-fit: cover;
+    /* object-fit: cover; */
+    overflow: hidden;
+    object-position: center;
     height: 80%;
     width: 100%;
     border: 1px solid black;
     transition: all 0.5s;
   }
-  .receta-imagen:hover {
-    transform: scale(0.8);
-    
+
+  .receta:hover{
+    cursor:grab;
+  }
+  .receta-imagen img:hover {
+    transform: scale(1.2);
   }
   .receta-nombre {
     font-size: 20px;
     font-weight: bolder;
+  }
+  .receta-imagen img{
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+  }
+
+  .receta-imagen:hover {
+    transform: scale(1, 0.5);
   }
