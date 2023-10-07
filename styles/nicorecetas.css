@@ -1,25 +1,86 @@
-.featured-recipe-nicolas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    grid-template-rows: repeat(3, auto) 1fr; /* Tres filas en la primera columna, una fila en la segunda */
-    grid-gap: 10px; /* Espacio entre las celdas del grid */
-    height: 300px; /* Altura opcional para el ejemplo */
+.titulo-descripcion {
+  justify-content: center; /* Centrar horizontalmente */
+  text-align: center; /* Centrar horizontalmente */
+  position: relative;
 }
 
-.item-featured-reciped-nicolas {
-    background-color: #FEFAE0;
-    padding: 20px;
+.contenedor {  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  gap: 30px 30px; 
+  grid-template-areas:
+    "foto-nicolas contenedor-foto-brochet-guanaco contenedor-foto-brochet-guanaco"
+    "receta-brochet-guanaco descripcion-guanaco descripcion-guanaco"
+    "receta-brochet-guanaco descripcion-guanaco descripcion-guanaco";
 }
 
-.item-featured-reciped-foto-nicolas {
-    background-color: #FEFAE0;
-    padding: 20px;
-    grid-column: 2 / span 1; /* Ocupa la segunda columna */
-    grid-row: 1 / span 3; /* Ocupa tres filas en la primera columna */
+.foto-nicolas { 
+  grid-area: foto-nicolas;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  text-align: center; /* Centrar horizontalmente */
+  position: relative;
 }
 
-.item-featured-reciped-foto-nicolas img{
-    max-width: 250px;
-    max-height: auto;
-    border-radius: 50%;
+.foto-nicolas img { 
+  height: 350px;
+  width: auto;
+  border-radius: 50%;
+  margin: 0 auto; /* Centrar horizontalmente */ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centrar tanto vertical como horizontalmente */
 }
+
+.contenedor-foto-brochet-guanaco img { 
+  height: 450px;
+  width: auto;
+}
+
+.contenedor-foto-brochet-guanaco { 
+  grid-area: contenedor-foto-brochet-guanaco; 
+}
+
+.receta-brochet-guanaco { 
+  grid-area: receta-brochet-guanaco; 
+}
+
+.descripcion-guanaco { 
+  grid-area: descripcion-guanaco; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
