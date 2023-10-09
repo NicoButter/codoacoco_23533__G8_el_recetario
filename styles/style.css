@@ -374,12 +374,12 @@ main {
 
 /************************************************************************** Estilos para el main ********************************************************************/
 
-main {
+/* main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
-    gap: 20px; /* Espacio entre los elementos */
-}
+    justify-content: space-between;
+    gap: 20px; 
+} */
 
 /* Estilos para el contenedor de recetas */
 
