@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ENLACE A LOS ESTILOS CSS -->
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/recetas.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 
     
-    <!-- Favicon -->
+    <!-- Enlace a Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
@@ -32,26 +31,21 @@
     <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-     <!-- TITULO DEL HEAD CON "CONTACTANOS"    -->
-    <title>Las recetas del 8 - contactanos</title>
+    <title>Las recetas del 8</title>
 
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
-        
         <div class="logo">
-            <img src="../images/logo_recetas_deliciosas.png" alt="Logo">
+            <a href="../index.html"><img src="../images/logo_recetas_deliciosas.png" alt="Logo"></a>
         </div>
-        
         <div class="title">
-            <h1>nuestros chef - contactate!</h1>
+            <h1>nuestros chef - Pablo</h1>
         </div>
-        
         <div class="redes-sociales">
             <ul>
                 <li>
-                    <a href="http://www.linkedin.com/in/nicolás-butterfield-9964aa1a3" class="linkedin-link" target="_blank" style="--clr: #FAEDCD">
+                    <a href="http://www.linkedin.com/in/nicolás-butterfield-9964aa1a3" style="--clr: #FAEDCD">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -60,7 +54,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="..//pages/recetas_sabrina.html" style="--clr: #FAEDCD">
+                    <a href="../pages/recetas_sabrina.html" style="--clr: #FAEDCD">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -87,51 +81,58 @@
                     </a>
                 </li>
             </ul>
-        </div>
-
+        </div>    
     </header>
     
-    <div class="nav">
+    <section class="navegacion">
+        <div class="ruta">
+            <ul>
+                <li><a href="../index.html">Home</a> > </li>
+                <li><a href="./recetas_pablo.html">Pablo</a> > </li>
+                <li><a href="./cheese_cake.html">Cheese Cake</a></li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <!-- <li><a href="#">Contacto</a></li> -->
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
     
-    <!-- Main -->
+    
     <main>
-        <section class="contenedor-formulario">
-            <form id="formulario-contacto" action="" method="POST">
-                <h2>contacto</h2>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-        
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
 
-    <!-- Footer -->
+        <section class="listado-recetas">
+            <div class="receta">
+                
+                    <div class="receta-imagen"><img src="../images/chesse_cake.webp" alt=""></div>  
+                    <div class="receta-nombre">Cheese cake</div>
+                
+            </div>
+            <div class="receta">
+                <div class="receta-imagen"><img src="../images/chocotorta.webp" alt=""></div>  
+                <div class="receta-nombre">Chocotorta</div>
+            </div>
+            <div class="receta">
+                <div class="receta-imagen"><img src="../images/marroc.webp" alt=""></div>         
+                <div class="receta-nombre">Torta Marroc</div>
+            </div>
+        </section>
+        <a href="./cheese_cake.html">Cheese Cake</a>
+    </main>
+    
+    
     <footer>
         <img class="logo-grupo" src="../images/logo_grupo_8.png" alt="">
         <p>&copy; 2023 El Recetario</p>
         <img class="logo-codo-a-codo" src="../images/logo_cod_a_codo.png" alt="">
-       
         <!-- Enlace al formulario de contacto -->
-        <a class="enlace_contacto=" href="../index.html">Inicio</a>
+        <a href="./contacto.html" class="enlace_contacto">Contacto</a>
     </footer>
 
 
-    <!-- ENLACE AL SCRIPT DE JS -->
     <script src="../js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
 
 </body>

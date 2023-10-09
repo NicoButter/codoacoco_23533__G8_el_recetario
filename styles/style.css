@@ -7,69 +7,157 @@ body {
 
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
-header {
+.header {
     position: sticky;
     top: 0;
-    display: flex; /* Utiliza flexbox para organizar los elementos en fila */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
     align-items: center; /* Centra verticalmente los elementos */
     background-color: #CCD5AE;
     color: #fff;
-    transition: all 0.5s; /* Transición suave dl padding */
-    padding: 5px;
-    height: 150px; /* altura*/
-    z-index: 2;
+    transition: all 0.5s; /* Transición suave de la propiedad de relleno (padding) */
+    /* padding: 5px; */
+    height: 190px; /* Ajusta la altura*/
+    z-index: 1;
+    
+    
+    
+    
+    
+    
+    
+    
+    /*
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: all 0.5s; /* Transición suave dl padding */ 
+    /*height: 190px; /* altura */
+    /*z-index: 2;
+    background-color: #CCD5AE;
+    /*position: relative;
+    justify-content: space-between; 
+    /*display: flex; /* Utiliza flexbox para organizar los elementos en fila */
+    /*grid-auto-rows:  600px;
+    /* Distribuye los elementos a lo largo del encabezado 
+    align-items: center; /* Centra verticalmente los elementos 
+    
+    color: #fff;*/
+}  
+
+.header .logo {
+    align-items: center;
 }
 
 .header .logo img {
-    width: 150px;
+    position: absolute;
+    top: 15%;
+    left: 120px;
+    transform: translate(-50%);
+    transition: all 0.3s;
+    width: 140px;
+    height: auto;
+    
+    
+    
+    /*width: 180px;
     height: auto;
     transition: all 0.3s;
-    margin-left: 15px;
+    /*margin-left: 25px;*/
 }
 
 /* Estilos para el título dentro del encabezado */
+
 .header .title h1 {
+    position: flex;
+    font-size: 50px;
+    align-items:center;
     color: rgb(31, 49, 2);
-    font-size: 45px;
+    /* font-size: 65px; */
     transition: all 0.5s;
-    margin-left: 80px;
 }
 
-.header nav {
-    order: 5; /* Cambia el orden para que esté debajo del título ese no  se como me salio*/
-}
 
-/* Estilos para el header cuando se achica (shrink) */
+
+
+
+/*.header nav {
+    order: 8; /* Cambia el orden para que esté debajo del título ese no  se como me salio*/
+
+
+/************************************************************************* Estilos para el header cuando se achica (shrink) *********************************************************************/
+
 .header.shrink {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
+    align-items: center; /* Centra verticalmente los elementos */
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: 100px; /* Permite que la altura se ajuste automáticamente */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    /* z-index: 1; */
 }
 
 /* Estilo adicional para el título cuando el header se achica  */
 
 .header.shrink .title h1 {
-    font-size: 50px; /* Cambia el tamaño del título cuando el header se achica */
+    position: flex;
+    align-items: center;
+    color: rgb(31, 49, 2);
+    transition: all 0.5s;
+    font-size: 30px; /* Cambia el tamaño del título cuando el header se achica */
 }
 
 .header.shrink .logo img {
-    width: 100px; /* Reduce el tamaño del logo, que me quedo lindo*/
+    width: 80px; /* Reduce el tamaño del logo, que me quedo lindo*/
 }
 
 .header.shrink .redes-sociales {
-    margin-right: 80px;
+    margin-right: 40px;
+    margin-left: 100px;
 }
 
-/* Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno*/
+.header.shrink .redes-sociales ul li span {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
 
-.header .redes-sociales{
-    margin-right: 20px;
+}
+
+.header.shrink .redes-sociales li span img {
+    width: 40px; /* Establece el ancho */
+    height: 40px; /* Establece la altura (mismo valor que el ancho para que sea redonda) */
+    border-radius: 50%; /* radio de borde del 50% para que la imagen sea redonda */
+    object-fit: cover; /* Ajusta la imagen dentro del espacio redondo */
+    z-index: 1;
+    margin: 5px;
+}
+
+.header.shrink .redes-sociales .nombres {
+    opacity: 0;
+    display: none;
+}
+
+
+
+
+
+
+/**************************** Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno ***********************/
+
+.header .redes-sociales {
+    margin-top: 30px;
     transition: all 0.3s;
 }
 
 .header .redes-sociales ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     position : relative;
-    display: flex;
     transform-style: preserve-3d;
 }
 
@@ -81,7 +169,7 @@ header {
     margin: 0 2px
 }
 
-.header .redes-sociales li span{
+.header .redes-sociales li span {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,12 +180,12 @@ header {
     align-items: center;
     background: #CCD5AE;
     color: #CCD5AE;
-    font-size: 30px;
+    /* font-size: 200px; */
     transition: 0.2s;
     border-radius: 50%;
 }
 
-.header .redes-sociales li:hover span{
+.header .redes-sociales li:hover span {
     z-index: 10;
     transition: 0.5s;
     color: #fff;
@@ -106,34 +194,34 @@ header {
     transform: translate(0px, -40px);
 }
 
-.header .redes-sociales li:hover span:nth-child(5){
+.header .redes-sociales li:hover span:nth-child(5) {
     transform: translate(-0px, -40px) ;
     opacity: 1;
 }
 
-.header .redes-sociales li:hover span:nth-child(4){
+.header .redes-sociales li:hover span:nth-child(4) {
     transform: translate(-0px, -30px);
     opacity: 0.8;
 }
 
-.header .redes-sociales li:hover span:nth-child(3){
+.header .redes-sociales li:hover span:nth-child(3) {
     transform: translate(-0px, -20px);
     opacity: 0.6;
 }
 
-.header .redes-sociales li:hover span:nth-child(2){
+.header .redes-sociales li:hover span:nth-child(2) {
     transform: translate(-0px, -10px);
     opacity: 0.4;
 }
 
-.header .redes-sociales li:hover span:nth-child(1){
+.header .redes-sociales li:hover span:nth-child(1) {
     transform: translate(0px);
     opacity: 0.2;
 }
 
-.header .redes-sociales li span img{
-    width: 75px; /* Establece el ancho */
-    height: 75px; /* Establece la altura (mismo valor que el ancho para que sea redonda) */
+.header .redes-sociales li span img {
+    width: 70px; /* Establece el ancho */
+    height: 70px; /* Establece la altura (mismo valor que el ancho para que sea redonda) */
     border-radius: 50%; /* radio de borde del 50% para que la imagen sea redonda */
     object-fit: cover; /* Ajusta la imagen dentro del espacio redondo */
     z-index: 1;
@@ -161,29 +249,36 @@ header {
     opacity: 1; /* Muestra el enlace completamente con el hover */
 }
 
-.header .redes-sociales .nombres{
-    display: flex;
+.header .redes-sociales .nombres {
     
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2px;
     
+    /*display: flex;
+    object-fit: cover;*/
 }
 
-.header .redes-sociales h5{
-    margin-right: 10px;
+.header .redes-sociales h5 {
+    text-align: center;
+    /*margin-right: 10px;
     flex-direction: row;
-    display: inline-block;
+    display: inline-block;*/
 } 
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
 nav {
     position: sticky;
-    margin: 0px;
-    padding: 0px;
-    top: 0px;
+    top: 190px; /* Fija el nav en la parte superior de la ventana */
+    left: 0; /*Fija el nav en la parte izquierda de la ventana*/
+    width: 100%; /* Ocupa todo el ancho de la ventana */
+    background-color: #FEFAE0;
+    /* z-index: 1;  */
 }
+
 nav ul {
     list-style-type: none;
-
     text-align: center;
 }
 
@@ -199,44 +294,35 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff5733;
+    color: #CCD5AE;
 }
 
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
+    padding: 15px;
+    /*padding-top: 190px; /* Igual a la altura del header */
     min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer, hay que revisar esto */
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
-    padding: 20px;
     text-align: center;
 }
 
-section {
-    margin: 20px auto; /* Margen superior e inferior para separar los elementos */
-    max-width: 600px; /* Ancho máximo para evitar que los elementos se ensanchen demasiado */
-}
-
 .featured-recipe {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100%; /* Establece el ancho al 100% */
-    max-width: 100%; /* Establece el ancho máximo al 100% */
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .featured-recipe img {
     max-width: 450px;
     height: auto;
-    margin-left: 150px;
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
 }
 
 .featured-recipe img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
 }
 
 .featured-recipe h2 {
@@ -246,7 +332,7 @@ section {
     max-height: 100%;
 }
 
-.featured-recipe .brochet-guanaco{
+.featured-recipe .brochet-guanaco {
     max-width: 800px;
     height: auto;
     margin-left: 150px;
@@ -260,9 +346,11 @@ section {
     /*text-align: center; */
 }
 
-.latest-recipes img{
-    max-width: 800px;
+.latest-recipes img {
+    max-width: 100%;
     height: auto;
+    /*max-width: 800px;
+    height: auto;*/
 }
 
 .latest-recipes article {
@@ -271,6 +359,7 @@ section {
     background-color: #FEFAE0; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    align-items: center;
 }
 
 .latest-recipes article:hover {
@@ -283,14 +372,14 @@ section {
 
 }
 
-/* Estilos para el main */
+/************************************************************************** Estilos para el main ********************************************************************/
 
-main {
+/* main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribuye los elementos en el espacio disponible */
-    gap: 20px; /* Espacio entre los elementos */
-}
+    justify-content: space-between;
+    gap: 20px; 
+} */
 
 /* Estilos para el contenedor de recetas */
 
@@ -352,7 +441,7 @@ footer p {
     border-radius: 5px;
 }
 
-#formulario-contacto h2{
+#formulario-contacto h2 {
     text-align: center;
 
 }
@@ -438,3 +527,4 @@ input[type="submit"]:hover {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
 }
+
