@@ -1,0 +1,47 @@
+.navegacion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    font-family: Poppins,sans-serif;
+  }
+  .ruta{
+    text-align: left;
+  }
+  .ruta ul {
+      list-style: none;
+  }
+  .ruta ul li{
+      display: inline-block;
+  }
+
+  .receta-titulo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    font-family: Poppins,sans-serif;
+    overflow: hidden;
+  }
+  .receta-titulo article{
+    width: 100%;
+    height: 100%;
+    background-color: #163d30;
+    color: white;
+    border: 1px solid black;
+  }
+  .receta-titulo .receta-imagen{
+    height: 350px;
+    width: 400px;
+    border: 1px solid black;
+  }
+  .receta-titulo .receta-imagen img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  .receta-detalle{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-family: Poppins,sans-serif;
+  }

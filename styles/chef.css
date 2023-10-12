@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   text-align: center;
+  font-family: Poppins,sans-serif;
 }
 .ruta{
   text-align: left;
@@ -101,16 +102,34 @@
   .receta:hover .receta-nombre {
     height: 40%;
   }
+  .receta:hover .receta-cuadro {
+    color:#163d30;
+    border: 1px solid black;
+    background-color: #f3c439;
+  }
   .receta-nombre {
     font-size: 20px;
     font-family: Poppins,sans-serif;
+    display: grid;
     color: white;
     width: 100%;
     height: 20%;
     font-weight: bolder;
-    text-align: center;
-    padding: 10px;
+    place-items: center;
     transition: all 0.5s ease; 
   }
-
+  .receta-cuadro {
+    font-size: 20px;
+    font-family: Poppins,sans-serif;
+    display: grid;
+    width: 80%;
+    height: 80%;
+    padding: auto;
+    margin: auto;
+    color: #163d30;
+    background-color: #163d30;
+    font-weight: bolder;
+    place-items: center;
+    transition: all 0.5s ease; 
+  }
 
