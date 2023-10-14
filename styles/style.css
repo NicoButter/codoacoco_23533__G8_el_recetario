@@ -1,8 +1,10 @@
 body {
-    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: Poppins,sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FEFAE0;
+    box-sizing: border-box;
 }
 
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
@@ -300,7 +302,7 @@ nav a:hover {
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
-    padding: 15px;
+    padding: 40px; 
     /*padding-top: 190px; /* Igual a la altura del header */
     min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer, hay que revisar esto */
     max-width: auto;
@@ -373,13 +375,6 @@ main {
 }
 
 /************************************************************************** Estilos para el main ********************************************************************/
-
-/* main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px; 
-} */
 
 /* Estilos para el contenedor de recetas */
 
