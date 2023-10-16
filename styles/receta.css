@@ -3,6 +3,7 @@
     grid-template-columns: auto auto auto auto;
     text-align: center;
     font-family: Poppins,sans-serif;
+    padding-left: 50px;
   }
   .ruta{
     text-align: left;
@@ -50,6 +51,35 @@
   }
   .receta-detalle{
     display: grid;
-    grid-template-columns: auto auto;
+    column-gap: 30px;
+    grid-template-columns: 25% auto;
     font-family: Poppins,sans-serif;
+    padding-top: 40px;
+  }
+
+  .receta-detalle .ingredientes{
+    /* background-color: red; */
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .receta-detalle .preparacion{
+    background-color: green;
+    border: 1px solid black;
+  }
+  
+  .receta-detalle .ingredientes ul {
+    list-style: none;
+    color: #457b66;
+    font-weight: bold;
+    font-size: 18px;
+    /* text-align: left; */
+  }
+
+  .receta-detalle .ingredientes ul li{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 15px;
   }
