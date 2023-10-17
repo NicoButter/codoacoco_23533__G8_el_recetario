@@ -52,6 +52,7 @@
   grid-column:2/4;
   font-family: Poppins,sans-serif;
 }
+
 .listado-recetas {
     display: grid;
     justify-content: space-evenly;
