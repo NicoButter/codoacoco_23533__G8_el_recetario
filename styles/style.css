@@ -103,8 +103,8 @@ body {
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
     align-items: center; /* Centra verticalmente los elementos */
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    /* z-index: 1; */
+    height: 100px; /* Permite que la altura se ajuste automáticamente */
+    /*z-index: 5;*/ 
 }
 
 /* Estilo adicional para el título cuando el header se achica  */
