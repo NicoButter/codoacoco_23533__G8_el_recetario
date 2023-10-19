@@ -426,8 +426,45 @@ footer p {
     margin-right: 200px; /* Elimina el margen predeterminado para el párrafo */
 }
 
+footer .enlace_contacto a { 
+    color: #faedcd;
+    text-decoration: none;
+
+}
+
+footer .enlace_inicio a { 
+    color: #faedcd;
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Estilos para el formulario */
-#contenedor-formulario {
+/*#contenedor-formulario {
     display: grid;
 }
 
@@ -445,7 +482,7 @@ footer p {
 
 }
 
-/* Estilo para las etiquetas de los campos */
+/* Estilo para las etiquetas de los campos 
 
 label {
     display: block;
@@ -453,7 +490,7 @@ label {
     font-weight: bold;
 }
 
-/* Estilo para los campos de entrada */
+/* Estilo para los campos de entrada 
 
 input[type="text"],
 input[type="email"],
@@ -465,7 +502,7 @@ textarea {
     border-radius: 3px;
 }
 
-/* Estilo para el botón */
+/* Estilo para el botón 
 
 input[type="submit"] {
     background-color: #007bff;
@@ -476,7 +513,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-/* Estilo para el botón de envío al pasar el mouse sobre él */
+/* Estilo para el botón de envío al pasar el mouse sobre él 
 
 input[type="submit"]:hover {
     background-color: #0056b3;
@@ -486,7 +523,95 @@ input[type="submit"]:hover {
     color: #fff;
     text-decoration: none;
 
+}*/
+
+
+
+/* Estilizar el formulario */
+#formulario-contacto {
+    max-width: 400px; /* Ajusta el ancho máximo del formulario según tu preferencia */
+    margin: 0 auto; /* Centra horizontalmente el formulario */
 }
+  
+  /* Estilizar los labels */
+#formulario-contacto label {
+    display: block; /* Hace que los labels ocupen una línea completa */
+    margin-bottom: 5px; /* Agrega un pequeño espacio entre los labels y los inputs */
+    font-weight: bold; /* Aplica negritas a los labels */
+  }
+  
+  /* Estilizar los inputs de texto y email */
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"] {
+    width: 100%; /* Los inputs ocuparán todo el ancho del contenedor */
+    padding: 10px; /* Agrega relleno para dar espacio dentro de los inputs */
+    margin-bottom: 15px; /* Agrega un espacio entre los inputs */
+    border: 1px solid #ccc; /* Agrega un borde alrededor de los inputs */
+    border-radius: 5px; /* Aplica bordes redondeados a los inputs */
+}
+  
+/* Estilizar el textarea */
+#formulario-contacto textarea {
+    width: 100%; /* El textarea ocupará todo el ancho del contenedor */
+    padding: 10px; /* Agrega relleno para dar espacio dentro del textarea */
+    margin-bottom: 15px; /* Agrega un espacio entre el textarea y otros elementos */
+    border: 1px solid #faedcd; /* Agrega un borde alrededor del textarea */
+    border-radius: 5px; /* Aplica bordes redondeados al textarea */
+}
+  
+  /* Estilizar el botón de enviar */
+#formulario-contacto button[type="submit"] {
+    background-color: #163d30; /* Cambia el color de fondo del botón según tu preferencia */
+    color: #faedcd; /* Cambia el color del texto del botón según tu preferencia */
+    padding: 10px 20px; /* Agrega relleno al botón para hacerlo más grande */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Aplica bordes redondeados al botón */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse por el botón */
+}
+  
+/* Estilizar el botón de enviar al pasar el mouse */
+#formulario-contacto button[type="submit"]:hover {
+    background-color: #faedcd; /* Cambia el color de fondo al pasar el mouse */
+    color: #163d30; /* Cambia el color del texto al pasar el mouse */
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     .header {
