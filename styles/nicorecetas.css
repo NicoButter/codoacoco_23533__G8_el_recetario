@@ -120,6 +120,7 @@
   grid-column-start: 1;
   grid-column-end: 4; 
 }
+
 .receta {
   border: 1px solid black;    
   text-align: center;
@@ -128,12 +129,15 @@
   background-color: #163d30;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+
 .receta:hover{
   cursor:grab;
 }
+
 .receta a:link, .receta a:visited, .receta a:hover, .receta a:active{
   text-decoration: none;
 }
+
 .receta-imagen {
   overflow: hidden;
   object-position: center;
@@ -147,20 +151,25 @@
   height: auto;
   transition: all 0.5s;
 }
+
 .receta:hover .receta-imagen img{
   transform: scale(1.2);
 }
+
 .receta:hover .receta-imagen {
   height: 60%;
 }
+
 .receta:hover .receta-nombre {
   height: 40%;
 }
+
 .receta:hover .receta-cuadro {
   color:#163d30;
   border: 1px solid black;
   background-color: #f3c439;
 }
+
 .receta-nombre {
   font-size: 20px;
   font-family: Poppins,sans-serif;
@@ -172,6 +181,7 @@
   place-items: center;
   transition: all 0.5s ease; 
 }
+
 .receta-cuadro {
   font-size: 20px;
   font-family: Poppins,sans-serif;
@@ -263,6 +273,89 @@
   overflow: hidden;
   border-radius: 50%;
 }
+
+.receta-titulo{
+  display: grid;
+  width: 100%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 60% 40%;
+  font-family: Poppins,sans-serif;
+  overflow: hidden;
+}
+.receta-titulo article{
+  display: grid;
+  height: 100%;
+  justify-content: center; 
+  align-items: center;
+  background-color: #163d30;
+  color: white;
+  border: 1px solid black;
+}
+.receta-titulo article .texto{
+  padding: 20px;
+  text-align: start;
+}
+.receta-titulo .receta-imagen{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+.receta-titulo .receta-imagen img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.receta-detalle{
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 25% auto;
+  padding-top: 40px;
+}
+
+.receta-detalle .ingredientes{
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.receta-detalle .ingredientes ul {
+  list-style: none;
+  color: #457b66;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.receta-detalle .ingredientes ul li{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #e7e7e7;
+  font-size: 15px;
+}
+
+.receta-detalle .preparacion h2{
+  text-align: left;
+}
+.receta-detalle .preparacion ul {
+  list-style: disc;
+  color: #457b66;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+  padding: 30px;
+}
+
+/* Estilos para la sección receta-detalle */
+.receta-detalle {
+  width: 100%; /* La sección ocupa todo el ancho */
+  text-align: left; /* Texto justificado a la izquierda */
+  margin: 0; /* Elimina márgenes (si los hubiera) */
+  padding: 20px; /* Agrega relleno para espaciar el contenido del borde */
+}
+
 
 
 
