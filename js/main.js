@@ -1,5 +1,19 @@
+window.addEventListener("load", (event) => {
+    if (entorno == "desa") {
+        document.getElementById("base").href = "http://localhost:5500/";
+    } else{
+        document.getElementById("base").href = "https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"
+    }
+  });
 var header = document.querySelector(".header");
-var root = "/codoacoco_23533__G8_el_recetario";
+//var root = "/codoacoco_23533__G8_el_recetario";
+var entorno = "prod"
+if (entorno == "desa") {
+    var root = "";
+} else{
+    var root = "/codoacoco_23533__G8_el_recetario";
+}
+
 // Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
 function shrinkHeader() {
     if (window.scrollY > 0) {
@@ -13,6 +27,7 @@ function shrinkHeader() {
 window.addEventListener("scroll", shrinkHeader);
 
 let pie = root + "/pages/footer.html"
+console.log("ruta: " + pie);
 fetch (pie)
 .then(x => x.text())
 .then(y => document.getElementById("footer").innerHTML = y);
