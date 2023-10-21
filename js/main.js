@@ -11,7 +11,7 @@ var entorno = "prod"
 if (entorno == "desa") {
     var root = "";
 } else{
-    var root = "/codoacoco_23533__G8_el_recetario";
+    var root = "codoacoco_23533__G8_el_recetario";
 }
 
 // Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
