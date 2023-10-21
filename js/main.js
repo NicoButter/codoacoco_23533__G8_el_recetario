@@ -26,13 +26,14 @@ function shrinkHeader() {
 // Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
 window.addEventListener("scroll", shrinkHeader);
 
-let pie = root + "/pages/footer.html"
-console.log("ruta: " + pie);
+let pie = "pages/footer.html"
+console.log("pie: " + pie);
 fetch (pie)
 .then(x => x.text())
 .then(y => document.getElementById("footer").innerHTML = y);
 
 let encabezado = root + "/pages/header.html"
+console.log("encabezado: " + pie);
 fetch (encabezado)
 .then(x => x.text())
 .then(y => document.getElementById("header").innerHTML = y);
