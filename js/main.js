@@ -1,5 +1,5 @@
 var header = document.querySelector(".header");
-
+var root = "/codoacoco_23533__G8_el_recetario";
 // Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
 function shrinkHeader() {
     if (window.scrollY > 0) {
@@ -12,12 +12,12 @@ function shrinkHeader() {
 // Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
 window.addEventListener("scroll", shrinkHeader);
 
-let pie = "/pages/footer.html"
+let pie = root + "/pages/footer.html"
 fetch (pie)
 .then(x => x.text())
 .then(y => document.getElementById("footer").innerHTML = y);
 
-let encabezado = "/codoacoco_23533__G8_el_recetario/pages/header.html"
+let encabezado = root + "/pages/header.html"
 fetch (encabezado)
 .then(x => x.text())
 .then(y => document.getElementById("header").innerHTML = y);
