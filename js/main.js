@@ -17,7 +17,7 @@ fetch (pie)
 .then(x => x.text())
 .then(y => document.getElementById("footer").innerHTML = y);
 
-let encabezado = "/pages/header.html"
+let encabezado = "/codoacoco_23533__G8_el_recetario/pages/header.html"
 fetch (encabezado)
 .then(x => x.text())
 .then(y => document.getElementById("header").innerHTML = y);
