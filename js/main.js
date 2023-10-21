@@ -12,11 +12,22 @@ function shrinkHeader() {
 // Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
 window.addEventListener("scroll", shrinkHeader);
 
+let pie = "/pages/footer.html"
+fetch (pie)
+.then(x => x.text())
+.then(y => document.getElementById("footer").innerHTML = y);
+
+let encabezado = "/pages/header.html"
+fetch (encabezado)
+.then(x => x.text())
+.then(y => document.getElementById("header").innerHTML = y);
+
 // Asignar la función al evento 'submit' del formulario
 document.getElementById("formulario-contacto").addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que se recargue la página
     mostrarMensaje(); // Llama a la función para mostrar el mensaje
 });
+
 
 function mostrarMensaje() {
     // Puedes personalizar el mensaje aquí
