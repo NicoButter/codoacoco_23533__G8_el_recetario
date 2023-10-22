@@ -101,12 +101,6 @@
     opacity: 0;
     display: none;
 }
-
-
-
-
-
-
 /**************************** Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno ***********************/
 
 .header .redes-sociales {
@@ -230,7 +224,7 @@
   /* Extra small devices (phones, 600px and down) */
   @media only screen and (max-width: 600px) {
     .header {
-        flex-direction: column; /* Apila elementos verticalmente */
+        grid-template-columns: auto;
         text-align: center;
     }
 
@@ -244,7 +238,7 @@
   /* Small devices (portrait tablets and large phones, 600px and up to 768px) */
   @media only screen and (min-width: 601px) and (max-width: 768px) {
     .header {
-        flex-direction: column; /* Apila elementos verticalmente */
+        grid-template-columns: auto;
         text-align: center;
     }
 
@@ -259,7 +253,7 @@
   /* Medium devices (landscape tablets, 768px and up to 992px) */
   @media only screen and (min-width: 769px) and (max-width: 992px) {
     .header {
-        flex-direction: column; /* Apila elementos verticalmente */
+        grid-template-columns: auto;
         text-align: center;
     }
 
