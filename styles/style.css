@@ -380,7 +380,6 @@ footer {
 
 footer .logo-grupo {
     max-width: 130px; /* Establece el ancho máximo deseado para la imagen */
-    margin-right: 200px; /* Agrega un margen derecho para separar la imagen del texto */
     padding: 5px;
 }
 
@@ -392,9 +391,6 @@ footer .logo-codo-a-codo {
 
 /* Estilos para el texto del footer */
 
-footer p {
-    margin-right: 200px; /* Elimina el margen predeterminado para el párrafo */
-}
 
 .enlace-contacto { 
     color: #faedcd;
