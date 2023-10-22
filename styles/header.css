@@ -39,11 +39,6 @@
     /* font-size: 65px; */
     transition: all 0.5s;
 }
-
-
-
-
-
 /*.header nav {
     order: 8; /* Cambia el orden para que esté debajo del título ese no  se como me salio*/
 
@@ -209,16 +204,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2px;
-    
-    /*display: flex;
-    object-fit: cover;*/
 }
 
 .header .redes-sociales h5 {
     text-align: center;
-    /*margin-right: 10px;
-    flex-direction: row;
-    display: inline-block;*/
 } 
 
   /* Extra small devices (phones, 600px and down) */
@@ -253,7 +242,7 @@
   /* Medium devices (landscape tablets, 768px and up to 992px) */
   @media only screen and (min-width: 769px) and (max-width: 992px) {
     .header {
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
         text-align: center;
     }
 
