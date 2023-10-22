@@ -14,21 +14,21 @@
     height: 190px; /* Ajusta la altura*/
     z-index: 1;
 }  
-
 .header .logo {
     align-items: center;
 }
 
-.header .logo img {
-    position: absolute;
-    top: 15%;
-    left: 120px;
-    transform: translate(-50%);
-    transition: all 0.3s;
+.header .logo a img {
+    /* position: absolute;
+    top: 15%; */
+    /* left: 120px; */
     width: 140px;
     height: auto;
+    object-fit: contain;
+    object-position: center;
+    /* transform: translate(-50%); */
+    transition: all 0.3s;
 }
-
 /* Estilos para el título dentro del encabezado */
 
 .header .title h1 {
@@ -222,6 +222,9 @@
         height: 350px;
         width: auto;
     }
+    .header .title h1 {
+        font-size: 20px;
+    }
 }
   
   /* Small devices (portrait tablets and large phones, 600px and up to 768px) */
@@ -236,22 +239,22 @@
         height: 350px;
         width: auto;
     }
+    .header .title h1 {
+        font-size: 20px;
+    }
 
   }
   
   /* Medium devices (landscape tablets, 768px and up to 992px) */
   @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .header {
-        grid-template-columns: auto auto;
-        text-align: center;
-    }
-
     .redes-sociales {
         margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
         height: 350px;
         width: auto;
     }
-
+    .header .title h1 {
+        font-size: 30px;
+    }
   } 
   
   /* Large devices (laptops/desktops, 993px and up to 1200px) */
