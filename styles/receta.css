@@ -91,14 +91,19 @@
   }
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .receta-titulo{
+    grid-template-columns: auto;
+  }
   .receta-detalle{
     grid-template-columns: auto;
   }
 }
 
-
 /* Small devices (portrait tablets and large phones, 600px and up to 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  .receta-titulo{
+    grid-template-columns: auto;
+  }
   .receta-detalle{
     grid-template-columns: auto;
   }
