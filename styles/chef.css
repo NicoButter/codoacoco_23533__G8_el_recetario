@@ -135,3 +135,48 @@
     transition: all 0.5s ease; 
   }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .chef {grid-template-columns: auto;}
+  .chef article {grid-column:1/1;}
+  .chef .Nombre {grid-column:1/1;}
+  .listado-recetas{grid-template-columns: auto;}
+  .listado-recetas .titulo{
+    grid-column-start: 1;
+    grid-column-end: 1; }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .chef {grid-template-columns: auto;}
+  .chef article {grid-column:1/1;}
+  .chef .Nombre {grid-column:1/1;}
+  .listado-recetas{grid-template-columns: auto;}
+  .listado-recetas .titulo{
+    grid-column-start: 1;
+    grid-column-end: 1; }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .chef {grid-template-columns: auto;}
+  .chef article {grid-column:1/1;}
+  .chef .Nombre {grid-column:1/1;}
+  .listado-recetas{grid-template-columns: auto;}
+  .listado-recetas .titulo{
+    grid-column-start: 1;
+    grid-column-end: 1; }
+} 
+
+/* Large devices (laptops/desktops, 993px and up to 1200px) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+  
+}
