@@ -272,57 +272,6 @@ input[type="submit"]:hover {
     color: #163d30; /* Cambia el color del texto al pasar el mouse */
 }
 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column; /* Apila elementos verticalmente */
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
-        height: 350px;
-        width: auto;
-    }
-}
-
 .latest-recipes {
     display: flex;
     flex-wrap: wrap;
