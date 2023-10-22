@@ -367,9 +367,10 @@ main {
 /* Estilos pra el Footer */
 
 footer {
-    display: flex; /* Habilita el modelo de caja flexible */
-    justify-content: center; /* Centra horizontalmente los elementos en el footer */
-    align-items: center; /* Centra verticalmente los elementos en el footer */
+    display: grid; /* Habilita el modelo de caja flexible */
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around; /* Centra horizontalmente los elementos en el footer */
+    align-items: center; /*Centra verticalmente los elementos en el footer*/
     background-color: #333;
     color: #fff;
     padding: 10px; /* Ajusta el relleno según sea necesario */
@@ -407,7 +408,38 @@ footer p {
 
 }
 
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    footer {
+        grid-template-columns: auto auto;
+    }
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    footer {
+        grid-template-columns: auto auto;
+    }
 
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up to 992px) */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        grid-template-columns: auto auto;
+    }
+
+  } 
+  
+  /* Large devices (laptops/desktops, 993px and up to 1200px) */
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1201px) {
+    
+  }
 
 
 
