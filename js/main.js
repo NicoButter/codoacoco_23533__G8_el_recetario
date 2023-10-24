@@ -23,16 +23,15 @@ function cargarHeaderYFooter() {
     }
 
     // Construir la ruta al archivo del header
-    var rutaHeader = "codoacoco_23533__G8_el_recetario/pages/header.html";
+    var rutaHeader = "pages/header.html";
     // Construir la ruta al archivo del footer
-    var rutaFooter = "codoacoco_23533__G8_el_recetario/pages/footer.html";
+    var rutaFooter = "pages/footer.html";
 
     // Cargar el header
     fetch(/*relativePrefix +*/ rutaHeader)
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
-
 
             // Actualizar las rutas de las imágenes en el header
             var logoDelicias = document.querySelector(".logoDelicias");
