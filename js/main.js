@@ -41,10 +41,10 @@ function cargarHeaderYFooter() {
             document.getElementById("footer").innerHTML = data;
 
             var logoGrupo = document.querySelector(".logo-grupo");
-            logoGrupo.src = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/images/logo_grupo_8.png";
+            logoGrupo.src = /*relativePrefix +*/ "images/logo_grupo_8.png";
 
             var logoCodoACodo = document.querySelector(".logo-codo-a-codo");
-            logoCodoACodo.src = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/images/logo_codo_a_codo.png";
+            logoCodoACodo.src = /*relativePrefix +*/ "images/logo_codo_a_codo.png";
         });
 }
 
