@@ -1,4 +1,4 @@
-var entorno_desarrollo = false;
+var entorno_desarrollo = true;
 
 if (entorno_desarrollo) {
     
