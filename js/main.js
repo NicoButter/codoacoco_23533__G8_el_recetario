@@ -28,7 +28,7 @@ function cargarHeaderYFooter() {
     var rutaFooter = "codoacoco_23533__G8_el_recetario/pages/footer.html";
 
     // Cargar el header
-    fetch(relativePrefix + rutaHeader)
+    fetch(/*relativePrefix +*/ rutaHeader)
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
@@ -64,13 +64,10 @@ function cargarHeaderYFooter() {
 
             var enlacePablo = document.querySelector(".enlace_pablo");
             enlacePablo.href = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/pages/recetas_pablo.html";
-        
-
-
         });
 
     // Cargar el footer
-    fetch(relativePrefix + rutaFooter)
+    fetch(/*relativePrefix +*/ rutaFooter)
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
