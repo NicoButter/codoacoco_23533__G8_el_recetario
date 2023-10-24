@@ -1,6 +1,6 @@
-window.env = 'desarrolloss';
+var entorno_desarrollo = true;
 
-if (window.env === 'desarrollo') {
+if (entorno_desarrollo) {
     
     // Código específico para el entorno de desarrollo
     console.log('Estás en el entorno de desarrollo');
@@ -82,7 +82,7 @@ if (window.env === 'desarrollo') {
 } else {
 
     // Código específico para otros entornos (p. ej., producción)
-    console.log('Estás en otro entorno (producción u otro)');
+    console.log('Estás en otro entorno');
 
     function cargarHeaderYFooter() {
         // Obtener el nivel de subdirectorio actual (ajustado a 3 niveles)
