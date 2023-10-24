@@ -42,28 +42,28 @@ function cargarHeaderYFooter() {
             enlaceLogoDelicias.href = relativePrefix + "codoacoco_23533__G8_el_recetario/index.html";
                       
             var fotoNicolas = document.querySelector(".foto_nicolas");
-            fotoNicolas.src = relativePrefix + "/images/foto_nicolas.jpg";
+            fotoNicolas.src = relativePrefix + "codoacoco_23533__G8_el_recetario/images/foto_nicolas.jpg";
 
             var enlaceNicolas = document.querySelector(".enlace_nicolas");
-            enlaceNicolas.href = relativePrefix + "/pages/nicorecetas.html";
+            enlaceNicolas.href = relativePrefix + "codoacoco_23533__G8_el_recetario/pages/nicorecetas.html";
 
             var fotoSabrina = document.querySelector(".foto_sabrina");
-            fotoSabrina.src = relativePrefix + "/images/foto_sabrina.jpg";
+            fotoSabrina.src = relativePrefix + "codoacoco_23533__G8_el_recetario/images/foto_sabrina.jpg";
 
             var enlaceSabrina = document.querySelector(".enlace_sabrina");
-            enlaceSabrina.href = relativePrefix + "/pages/recetas_sabrina.html";
+            enlaceSabrina.href = relativePrefix + "codoacoco_23533__G8_el_recetario/pages/recetas_sabrina.html";
 
             var fotoNati = document.querySelector(".foto_natalia");
-            fotoNati.src = relativePrefix + "/images/foto_natalia.jpeg";
+            fotoNati.src = relativePrefix + "codoacoco_23533__G8_el_recetario/images/foto_natalia.jpeg";
 
             var enlaceNatalia = document.querySelector(".enlace_natalia");
-            enlaceNatalia.href = relativePrefix + "/pages/recetas_natalia.html";
+            enlaceNatalia.href = relativePrefix + "codoacoco_23533__G8_el_recetario/pages/recetas_natalia.html";
             
             var fotoPablo = document.querySelector(".foto_pablo");
-            fotoPablo.src = relativePrefix + "/images/foto_pablo.jpg";
+            fotoPablo.src = relativePrefix + "codoacoco_23533__G8_el_recetario/images/foto_pablo.jpg";
 
             var enlacePablo = document.querySelector(".enlace_pablo");
-            enlacePablo.href = relativePrefix + "/pages/recetas_pablo.html";
+            enlacePablo.href = relativePrefix + "codoacoco_23533__G8_el_recetario/pages/recetas_pablo.html";
         
 
 
