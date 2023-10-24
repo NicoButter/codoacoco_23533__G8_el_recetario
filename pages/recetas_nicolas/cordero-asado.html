@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/nicorecetas.css">
+
+    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
+    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
+    
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/nicorecetas.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="manifest" href="../../manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -45,9 +48,9 @@
     
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <li><a href="#">Contacto</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </section>   
@@ -59,7 +62,7 @@
                     <p>Aprende a realizar esta deliciosa receta realizada por nuestro chef Nicolás Butterfield.</p>
                 </div>
             </article>    
-            <div class="receta-imagen"><img src="images/cordero-asado.jpg" alt=""></div>
+            <div class="receta-imagen"><img src="../../images/cordero-asado.jpg" alt=""></div>
         </section>
         <section class="receta-detalle">
             <article class="ingredientes">
@@ -140,12 +143,11 @@
         </section>
     </main>
     
-    
-    <footer id="footer">
-    </footer>
+    <!-- El footer se carga de forma dinamica -->
+    <footer id="footer"></footer>
 
-
-    <script src="js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../../js/main.js"></script> 
 
 </body>
 </html>

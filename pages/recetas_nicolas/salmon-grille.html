@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/nicorecetas.css">
+
+    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
+    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
+    
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/nicorecetas.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,16 +41,17 @@
 
 </head>
 <body>
-    <header id="header" class="header">
-    </header>
+
+    <!-- El header se carga dinamicamente -->
+    <header id="header" class="header"></header>
     
     <section class="navegacion">
     
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <li><a href="#">Contacto</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </section>   
@@ -59,7 +63,7 @@
                     <p>Aprende a realizar esta deliciosa receta realizada por nuestro chef Nicolpas Butterfield.</p>
                 </div>
             </article>    
-            <div class="receta-imagen"><img src="images/salmon-a-la-plancha.jpg" alt=""></div>
+            <div class="receta-imagen"><img src="../../images/salmon-a-la-plancha.jpg" alt=""></div>
         </section>
         <section class="receta-detalle">
             <article class="ingredientes">
@@ -84,12 +88,11 @@
         </section>
     </main>
     
-    
-    <footer id="footer">
-    </footer>
+    <!-- El footer se carga dinamicamente -->
+    <footer id="footer"></footer>
 
-
-    <script src="js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../../js/main.js"></script> 
 
 </body>
 </html>

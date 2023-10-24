@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
+    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
+    
+    <!-- Enlace a estilos -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,20 +37,18 @@
     <meta name="msapplication-TileImage" content="../images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
-
-
     <title>Las recetas del 8</title>
 
 </head>
 <body>
-    <header id="header" class="header">
-    </header>
+    
+    <!-- El header se carga dinamicamente -->
+    <header id="header" class="header"></header>
     
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
                 <li><a href="#">Contacto</a></li>
             </ul>
@@ -59,7 +62,7 @@
     <h1>Recetas</h1>
     <div class="receta1">
         <div class="receta1-name"><h2>Pollo grille</h2></div>
-        <img class="receta1-img" src="images/pollo grille.JPG" alt="">
+        <img class="receta1-img" src="../images/pollo grille.JPG" alt="">
         <h3>Preparación</h3>
         <p>
             Tomar dos supremas de pollo, condimentar con sal, ajo y pimienta. Y llevar a la plancha a fuego medio, hasta lograr una concepción plena, logrando obtener una capa dorada y crujiente…
@@ -72,7 +75,7 @@
     </div>
     <div class="receta2">
         <div class="receta2-name"><h2>Fideuá</h2></div>
-        <img class="receta2-img" src="images/fideua.JPG" alt="">
+        <img class="receta2-img" src="../images/fideua.JPG" alt="">
         <h3>Ingredientes</h3>
         <p>Fideos gruesos
             400 g
@@ -100,19 +103,18 @@
     </div>
     <div class="receta3">
         <div class="receta3-name"><h2>Filet mignon</h2></div>
-        <img class="receta3-img" src="images/filet  mignon.webp" alt="">
+        <img class="receta3-img" src="../images/filet  mignon.webp" alt="">
     </div>
     
 </div>
 
     </main>
     
-    
-    <footer id="footer">
-    </footer>
+    <!-- El footer se carga de forma dinamica externa -->
+    <footer id="footer"></footer>
 
-
-    <script src="js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../js/main.js"></script> 
 
 </body>
 </html>

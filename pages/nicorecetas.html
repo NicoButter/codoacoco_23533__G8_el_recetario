@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/>
+
+    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
+    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
+    
     <!-- Enlace a los stylesheet -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/nicorecetas.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/nicorecetas.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,14 +44,14 @@
 
 <body>
     
-    <header id="header" class="header">
-    </header>
+    <!-- El header se carga de forma externa -->
+    <header id="header" class="header"></header>
 
     <div class="nav">
         <nav>
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -58,7 +61,7 @@
         <section class="chef">      
             
             <div class="foto">
-                <img src="images/foto_nicolas.jpg" alt="foto-niocolas">
+                <img src="../images/foto_nicolas.jpg" alt="foto-niocolas">
                 <span class="border-top"></span>
                 <span class="border-right"></span>
                 <span class="border-bottom"></span>
@@ -81,8 +84,8 @@
         <section class="listado-recetas"> 
             <h2 class="titulo">Recetas especiales de la patagonia</h2>
             <div class="receta">
-                <a href="pages/recetas_nicolas/brochet-guanaco.html">
-                    <div class="receta-imagen"><img src="images/brochet_guanaco.png" alt="brochet-guanaco"></div>  
+                <a href="../pages/recetas_nicolas/brochet-guanaco.html">
+                    <div class="receta-imagen"><img src="../images/brochet_guanaco.png" alt="brochet-guanaco"></div>  
                     <div class="receta-nombre">Brochet de Guanaco
                         <div class="receta-cuadro">Ver receta</div>
                     </div>  
@@ -90,8 +93,8 @@
             </div>
 
             <div class="receta">
-                <a href="pages/recetas_nicolas/cordero-asado.html">
-                    <div class="receta-imagen"><img src="images/cordero-asado.jpg" alt=""></div>  
+                <a href="../pages/recetas_nicolas/cordero-asado.html">
+                    <div class="receta-imagen"><img src="../images/cordero-asado.jpg" alt=""></div>  
                     <div class="receta-nombre">Cordero asado
                         <div class="receta-cuadro">Ver receta</div>
                     </div>    
@@ -99,8 +102,8 @@
             </div>
 
             <div class="receta">
-                <a href="pages/recetas_nicolas/salmon-grille.html">
-                    <div class="receta-imagen"><img src="images/salmon-a-la-plancha.jpg" alt=""></div>         
+                <a href="../pages/recetas_nicolas/salmon-grille.html">
+                    <div class="receta-imagen"><img src="../images/salmon-a-la-plancha.jpg" alt=""></div>         
                     <div class="receta-nombre">Salmón grillé
                         <div class="receta-cuadro">Ver receta</div>
                     </div>
@@ -110,11 +113,11 @@
         
     </main>
 
-    <footer id="footer">
-    </footer>
+    <!-- El footer se carga de forma externa -->
+    <footer id="footer"></footer>
 
-    <!-- SCRIPT DE JS -->
-    <script src="js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+    <!-- Enlaza el archivo JavaScript -->
+    <script src="../js/main.js"></script> 
   
 </body>
 </html>
