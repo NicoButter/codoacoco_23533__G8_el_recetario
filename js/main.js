@@ -32,6 +32,41 @@ function cargarHeaderYFooter() {
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
+
+
+            // Actualizar las rutas de las imágenes en el header
+            var logoDelicias = document.querySelector(".logoDelicias");
+            logoDelicias.src = relativePrefix + "/images/logo_recetas_deliciosas.png";
+
+            var enlaceLogoDelicias = document.querySelector(".enlace_logo_delicias");
+            enlaceLogoDelicias.href = relativePrefix + "/index.html";
+                      
+            var fotoNicolas = document.querySelector(".foto_nicolas");
+            fotoNicolas.src = relativePrefix + "/images/foto_nicolas.jpg";
+
+            var enlaceNicolas = document.querySelector(".enlace_nicolas");
+            enlaceNicolas.href = relativePrefix + "/pages/nicorecetas.html";
+
+            var fotoSabrina = document.querySelector(".foto_sabrina");
+            fotoSabrina.src = relativePrefix + "/images/foto_sabrina.jpg";
+
+            var enlaceSabrina = document.querySelector(".enlace_sabrina");
+            enlaceSabrina.href = relativePrefix + "/pages/recetas_sabrina.html";
+
+            var fotoNati = document.querySelector(".foto_natalia");
+            fotoNati.src = relativePrefix + "/images/foto_natalia.jpeg";
+
+            var enlaceNatalia = document.querySelector(".enlace_natalia");
+            enlaceNatalia.href = relativePrefix + "/pages/recetas_natalia.html";
+            
+            var fotoPablo = document.querySelector(".foto_pablo");
+            fotoPablo.src = relativePrefix + "/images/foto_pablo.jpg";
+
+            var enlacePablo = document.querySelector(".enlace_pablo");
+            enlacePablo.href = relativePrefix + "/pages/recetas_pablo.html";
+        
+
+
         });
 
     // Cargar el footer
