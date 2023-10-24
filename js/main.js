@@ -13,6 +13,58 @@ function shrinkHeader() {
 window.addEventListener("scroll", shrinkHeader);
 
 function cargarHeaderYFooter() {
+    // Construir la ruta al archivo del header
+    var rutaHeader = "pages/header.html";
+    // Construir la ruta al archivo del footer
+    var rutaFooter = "pages/footer.html";
+    
+    // Cargar el header
+    fetch(rutaHeader)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    // Cargar el footer
+    fetch(rutaFooter)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+}
+
+cargarHeaderYFooter();
+
+// Asignar la función al evento 'submit' del formulario
+document.getElementById("formulario-contacto").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que se recargue la página
+    mostrarMensaje(); // Llama a la función para mostrar el mensaje
+});
+
+function mostrarMensaje() {
+    // Puedes personalizar el mensaje aquí
+    alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.");
+}
+
+
+
+
+
+/*var header = document.querySelector(".header");
+
+// Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
+function shrinkHeader() {
+    if (window.scrollY > 0) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+}
+
+// Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
+window.addEventListener("scroll", shrinkHeader);
+
+function cargarHeaderYFooter() {
     // Obtener la ruta absoluta actual
     //var rutaAbsoluta = window.location.href;
     var rutaAbsoluta = location.pathname;
@@ -95,4 +147,4 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
 function mostrarMensaje() {
     // Puedes personalizar el mensaje aquí
     alert("¡Gracias por tu mensaje! Nos pondremos en contacto con vos muy pronto.");
-}
+}*/
