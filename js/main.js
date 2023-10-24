@@ -5,7 +5,7 @@ function shrinkHeader() {
     if (window.scrollY > 0) {
         header.classList.add("shrink");
     } else {
-        header.classList.remove("shrink");
+        header.classList remove("shrink");
     }
 }
 
@@ -14,7 +14,7 @@ window.addEventListener("scroll", shrinkHeader);
 
 function cargarHeaderYFooter() {
     // Obtener el nivel de subdirectorio actual (ajustado a 3 niveles)
-    var nivelSubdirectorio = 3;
+    var nivelSubdirectorio = 1; // El valor podría variar según tu estructura real
 
     // Construir un prefijo relativo para las imágenes en base al nivel del subdirectorio
     var relativePrefix = "";
@@ -28,14 +28,14 @@ function cargarHeaderYFooter() {
     var rutaFooter = "pages/footer.html";
 
     // Cargar el header
-    fetch(rutaHeader)
+    fetch(relativePrefix + rutaHeader)
         .then(response => response.text())
         .then(data => {
             document.getElementById("header").innerHTML = data;
         });
 
     // Cargar el footer
-    fetch(rutaFooter)
+    fetch(relativePrefix + rutaFooter)
         .then(response => response.text())
         .then(data => {
             document.getElementById("footer").innerHTML = data;
@@ -60,6 +60,7 @@ function mostrarMensaje() {
     // Puedes personalizar el mensaje aquí
     alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.");
 }
+
 
 
 
