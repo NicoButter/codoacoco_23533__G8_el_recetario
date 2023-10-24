@@ -1,4 +1,69 @@
+var header = document.querySelector(".header");
+
+// Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
+function shrinkHeader() {
+    if (window.scrollY > 0) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+}
+
+// Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
+window.addEventListener("scroll", shrinkHeader);
+
 function cargarHeaderYFooter() {
+    // Obtener el nivel de subdirectorio actual (ajustado a 3 niveles)
+    var nivelSubdirectorio = 3;
+
+    // Construir un prefijo relativo para las imágenes en base al nivel del subdirectorio
+    var relativePrefix = "";
+    for (var i = 0; i < nivelSubdirectorio; i++) {
+        relativePrefix += "../";
+    }
+
+    // Construir la ruta al archivo del header
+    var rutaHeader = "pages/header.html";
+    // Construir la ruta al archivo del footer
+    var rutaFooter = "pages/footer.html";
+
+    // Cargar el header
+    fetch(rutaHeader)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        });
+
+    // Cargar el footer
+    fetch(rutaFooter)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+
+            var logoGrupo = document.querySelector(".logo-grupo");
+            logoGrupo.src = relativePrefix + "images/logo_grupo_8.png";
+
+            var logoCodoACodo = document.querySelector(".logo-codo-a-codo");
+            logoCodoACodo.src = relativePrefix + "images/logo_codo_a_codo.png";
+        });
+}
+
+cargarHeaderYFooter();
+
+// Asignar la función al evento 'submit' del formulario
+document.getElementById("formulario-contacto").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que se recargue la página
+    mostrarMensaje(); // Llama a la función para mostrar el mensaje
+});
+
+function mostrarMensaje() {
+    // Puedes personalizar el mensaje aquí
+    alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.");
+}
+
+
+
+/*function cargarHeaderYFooter() {
     // Obtener el nivel de subdirectorio actual (ajustado a 3 niveles)
     var nivelSubdirectorio = 3;
 
@@ -63,7 +128,7 @@ function mostrarMensaje() {
 }
 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 /*var header = document.querySelector(".header");
