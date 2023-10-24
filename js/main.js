@@ -1,17 +1,3 @@
-var header = document.querySelector(".header");
-
-// Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
-function shrinkHeader() {
-    if (window.scrollY > 0) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
-}
-
-// Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
-window.addEventListener("scroll", shrinkHeader);
-
 function cargarHeaderYFooter() {
     // Obtener el nivel de subdirectorio actual (ajustado a 3 niveles)
     var nivelSubdirectorio = 3;
@@ -23,9 +9,9 @@ function cargarHeaderYFooter() {
     }
 
     // Construir la ruta al archivo del header
-    var rutaHeader = "pages/header.html";
+    var rutaHeader = relativePrefix + "pages/header.html";
     // Construir la ruta al archivo del footer
-    var rutaFooter = "pages/footer.html";
+    var rutaFooter = relativePrefix + "pages/footer.html";
 
     // Cargar el header
     fetch(rutaHeader)
@@ -49,6 +35,21 @@ function cargarHeaderYFooter() {
 }
 
 cargarHeaderYFooter();
+
+var header = document.querySelector(".header");
+
+// Función para agregar o quitar la clase "shrink" al header al hacer scroll hacia abajo
+function shrinkHeader() {
+    if (window.scrollY > 0) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+}
+
+
+// Agrega un evento de desplazamiento (scroll) para llamar a la función shrinkHeader
+window.addEventListener("scroll", shrinkHeader);
 
 // Asignar la función al evento 'submit' del formulario
 document.getElementById("formulario-contacto").addEventListener("submit", function(event) {
