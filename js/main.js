@@ -35,10 +35,10 @@ function cargarHeaderYFooter() {
 
             // Actualizar las rutas de las imágenes en el header
             var logoDelicias = document.querySelector(".logoDelicias");
-            logoDelicias.src = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/images/logo_recetas_deliciosas.png";
+            logoDelicias.src = /*relativePrefix +*/ "images/logo_recetas_deliciosas.png";
 
             var enlaceLogoDelicias = document.querySelector(".enlace_logo_delicias");
-            enlaceLogoDelicias.href = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/index.html";
+            enlaceLogoDelicias.href = /*relativePrefix +*/ "index.html";
                       
             var fotoNicolas = document.querySelector(".foto_nicolas");
             fotoNicolas.src = /*relativePrefix +*/ "codoacoco_23533__G8_el_recetario/images/foto_nicolas.jpg";
