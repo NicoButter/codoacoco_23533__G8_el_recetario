@@ -7,7 +7,7 @@ function calcularNivelDirectorio() {
     
     console.log("PartesURL.LENGTH es: " + partesURL.length);
 
-    var nivelSubdirectorio = partesURL.length - 3;
+    var nivelSubdirectorio = partesURL.length - (partesURL.length - 1);
 
 
     console.log("las partesURL es resta: " + partesURL);
