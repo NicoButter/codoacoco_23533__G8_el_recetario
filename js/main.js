@@ -1,7 +1,7 @@
 function calcularNivelDirectorio() {
     var urlActual = window.location.href;
     var partesURL = urlActual.split("/");
-    var nivelSubdirectorio = partesURL.length - 3;
+    var nivelSubdirectorio = partesURL.length - 4;
 
     console.log("El nivel actual es: " + nivelSubdirectorio);
 
