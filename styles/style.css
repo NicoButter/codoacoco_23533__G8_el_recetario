@@ -18,11 +18,10 @@ body {
 
 nav {
     position: sticky;
-    top: 190px; /* Fija el nav en la parte superior de la ventana */
+    top: 0px; /* Fija el nav en la parte superior de la ventana */
     left: 0; /*Fija el nav en la parte izquierda de la ventana*/
     width: 100%; /* Ocupa todo el ancho de la ventana */
     background-color: #FEFAE0;
-    /* z-index: 1;  */
 }
 
 nav ul {
@@ -49,7 +48,6 @@ nav a:hover {
 
 main {
     padding: 40px; 
-    /*padding-top: 190px; /* Igual a la altura del header */
     min-height: calc(100vh - 200px); /* Ajusta la altura según el alto del header y el footer, hay que revisar esto */
     max-width: auto;
     margin: 0 auto;
@@ -57,12 +55,16 @@ main {
 }
 
 .featured-recipe {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 
 .featured-recipe img {
-    max-width: 450px;
+    max-width: 35%;
     height: auto;
     transition: transform 0.3s ease-in-out;
     align-items: center;
@@ -74,8 +76,9 @@ main {
 }
 
 .featured-recipe h2 {
-    font-size: 120px; /* Tamanio de la fuente */
-    margin-left: 80px;
+    font-size: 5em;
+    /*font-size: 120px; /* Tamanio de la fuente */
+    /* margin-left: 80px; */
     max-width: 100%;
     max-height: 100%;
 }
@@ -136,93 +139,6 @@ main {
 .latest-recipes article {
     flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos para el formulario */
-/*#contenedor-formulario {
-    display: grid;
-}
-
-#formulario-contacto {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #CCD5AE;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#formulario-contacto h2 {
-    text-align: center;
-
-}
-
-/* Estilo para las etiquetas de los campos 
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-/* Estilo para los campos de entrada 
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Estilo para el botón 
-
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-/* Estilo para el botón de envío al pasar el mouse sobre él 
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.enlace_contacto{
-    color: #fff;
-    text-decoration: none;
-
-}*/
-
-
 
 /* Estilizar el formulario */
 #formulario-contacto {
@@ -298,3 +214,9 @@ input[type="submit"]:hover {
     }
 }
 
+/* Estilos para el nav en pantallas más pequeñas (ajuste de la posición hacia arriba) */
+@media (max-width: 768px) {
+    nav {
+        top: -20px; /* Ajusta la posición hacia arriba en 50px (ajusta el valor según tus necesidades) */
+    }
+}
