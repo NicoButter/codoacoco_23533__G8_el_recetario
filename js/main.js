@@ -3,6 +3,8 @@ function calcularNivelDirectorio() {
     var partesURL = urlActual.split("/");
     var nivelSubdirectorio = partesURL.length - 3;
 
+    console.log("El nivel actual es: " + nivelSubdirectorio);
+
     // Si estás en la raíz, el prefijo es "./"
     if (nivelSubdirectorio === 1) {
         return "./";
@@ -13,7 +15,7 @@ function calcularNivelDirectorio() {
         return "../".repeat(nivelSubdirectorio - 1);
     }
 
-    console.log("El nivel actual es: "+ nivelSubdirectorio);
+    console.log("El nivel actual es: " + nivelSubdirectorio);
 }
 
 
@@ -23,7 +25,10 @@ function cargarHeaderYFooter() {
     var rutaHeader = relativePrefix + "pages/header.html";
     var rutaFooter = relativePrefix + "pages/footer.html";
 
+    
+    
     console.log("La ruta al header es: " + rutaHeader);
+    
     console.log("La ruta al footer es: " + rutaFooter);
 
     // Construir la ruta al archivo del header
