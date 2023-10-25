@@ -16,8 +16,8 @@ function calcularNivelDirectorio() {
 function cargarHeaderYFooter() {
 
     var relativePrefix = calcularNivelDirectorio();
-    var rutaHeader = relativePrefix + "pages/header.html";
-    var rutaFooter = relativePrefix + "pages/footer.html";
+    var rutaHeader = relativePrefix + "/pages/header.html";
+    var rutaFooter = relativePrefix + "/pages/footer.html";
 
 
     // Construir la ruta al archivo del header
