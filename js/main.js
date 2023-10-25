@@ -1,8 +1,16 @@
 function calcularNivelDirectorio() {
     var urlActual = window.location.href;
-    var partesURL = urlActual.split("/");
-    var nivelSubdirectorio = partesURL.length - 4;
+    console.log("La url actual es: " + urlActual);
 
+    var partesURL = urlActual.split("/");
+    console.log("las partesURL es: " + partesURL);
+    
+    console.log("PartesURL.LENGTH es: " + partesURL.length);
+
+    var nivelSubdirectorio = partesURL.length - 3;
+
+
+    console.log("las partesURL es resta: " + partesURL);
     console.log("El nivel actual es: " + nivelSubdirectorio);
 
     // Si estás en la raíz, el prefijo es "./"
