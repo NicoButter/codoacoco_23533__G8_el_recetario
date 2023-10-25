@@ -1,3 +1,5 @@
+function cargarHeaderYFooter() {
+
 // Construir la ruta al archivo del header
 var rutaHeader = "/pages/header.html";
 // Construir la ruta al archivo del footer
@@ -55,8 +57,9 @@ var rutaFooter = "/pages/footer.html";
             logoCodoACodo.src = "/images/logo_codo_a_codo.png";
     });
 
-    
-    cargarHeaderYFooter();
+}    
+
+cargarHeaderYFooter();
 
 var header = document.querySelector(".header");
 
