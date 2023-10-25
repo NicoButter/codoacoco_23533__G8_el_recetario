@@ -1,9 +1,29 @@
+function calcularNivelDirectorio() {
+    var urlActual = window.location.href;
+    var partesURL = urlActual.split("/");
+    var nivelSubdirectorio = partesURL.length - 3;
+
+    // Si estás en la raíz, el prefijo es "."
+    if (nivelSubdirectorio === 0) {
+        return ".";
+    }
+
+    return "../".repeat(nivelSubdirectorio);
+}
+
+
+
 function cargarHeaderYFooter() {
 
-// Construir la ruta al archivo del header
-var rutaHeader = "./pages/header.html";
-// Construir la ruta al archivo del footer
-var rutaFooter = "./pages/footer.html";
+    var relativePrefix = calcularNivelDirectorio();
+    var rutaHeader = relativePrefix + "pages/header.html";
+    var rutaFooter = relativePrefix + "pages/footer.html";
+
+
+    // Construir la ruta al archivo del header
+    //var rutaHeader = "./pages/header.html";
+    // Construir la ruta al archivo del footer
+    //var rutaFooter = "./pages/footer.html";
         
     // Cargar el header
     fetch(rutaHeader)
