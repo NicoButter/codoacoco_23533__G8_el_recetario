@@ -1,12 +1,16 @@
 function calcularNivelDirectorio() {
     var urlActual = window.location.href;
-    var partesURL = urlActual.split("/");
-    var nivelSubdirectorio = partesURL.length - 3;
+    var url = new URL(urlActual);
+    var ruta = url.pathname;
+    var partesRuta = ruta.split("/");
+    var nivelSubdirectorio = partesRuta.length - 2; // Resta 2 porque el primer elemento es una cadena vacía
 
-    // Si estás en la raíz, el prefijo es "."
-    if (nivelSubdirectorio === 0) {
-        return ".";
+    // Si estás en la raíz, el prefijo es "./"
+    if (nivelSubdirectorio <= 0) {
+        return "./";
     }
+
+    console.log("El nivel actual es: " + nivelSubdirectorio);
 
     return "../".repeat(nivelSubdirectorio);
 }
@@ -16,9 +20,11 @@ function calcularNivelDirectorio() {
 function cargarHeaderYFooter() {
 
     var relativePrefix = calcularNivelDirectorio();
-    var rutaHeader = relativePrefix + "/pages/header.html";
-    var rutaFooter = relativePrefix + "/pages/footer.html";
+    var rutaHeader = relativePrefix + "pages/header.html";
+    var rutaFooter = relativePrefix + "pages/footer.html";
 
+    console.log("La ruta al header es: " + rutaHeader);
+    console.log("La ruta al footer es: " + rutaFooter);
 
     // Construir la ruta al archivo del header
     //var rutaHeader = "./pages/header.html";
@@ -33,34 +39,34 @@ function cargarHeaderYFooter() {
     
             // Actualizar las rutas de las imágenes en el header
             var logoDelicias = document.querySelector(".logoDelicias");
-            logoDelicias.src =  "./images/logo_recetas_deliciosas.png";
+            logoDelicias.src =  relativePrefix + "images/logo_recetas_deliciosas.png";
     
             var enlaceLogoDelicias = document.querySelector(".enlace_logo_delicias");
-            enlaceLogoDelicias.href = "./index.html";
+            enlaceLogoDelicias.href = relativePrefix + "index.html";
                           
             var fotoNicolas = document.querySelector(".foto_nicolas");
-            fotoNicolas.src = "./images/foto_nicolas.jpg";
+            fotoNicolas.src = relativePrefix + "images/foto_nicolas.jpg";
     
             var enlaceNicolas = document.querySelector(".enlace_nicolas");
-            enlaceNicolas.href = "./pages/nicorecetas.html";
+            enlaceNicolas.href = relativePrefix + "pages/nicorecetas.html";
     
             var fotoSabrina = document.querySelector(".foto_sabrina");
-            fotoSabrina.src = "./images/foto_sabrina.jpg";
+            fotoSabrina.src = relativePrefix + "images/foto_sabrina.jpg";
     
             var enlaceSabrina = document.querySelector(".enlace_sabrina");
-            enlaceSabrina.href = "./pages/recetas_sabrina.html";
+            enlaceSabrina.href = relativePrefix + "pages/recetas_sabrina.html";
     
             var fotoNati = document.querySelector(".foto_natalia");
-            fotoNati.src = "./images/foto_natalia.jpeg";
+            fotoNati.src = relativePrefix + "images/foto_natalia.jpeg";
     
             var enlaceNatalia = document.querySelector(".enlace_natalia");
-            enlaceNatalia.href = "./pages/recetas_natalia.html";
+            enlaceNatalia.href = relativePrefix + "pages/recetas_natalia.html";
                 
             var fotoPablo = document.querySelector(".foto_pablo");
-            fotoPablo.src = "./images/foto_pablo.jpg";
+            fotoPablo.src = relativePrefix + "images/foto_pablo.jpg";
     
             var enlacePablo = document.querySelector(".enlace_pablo");
-            enlacePablo.href = "./pages/recetas_pablo.html";
+            enlacePablo.href = relativePrefix + "pages/recetas_pablo.html";
     });
     
     // Cargar el footer
@@ -71,10 +77,10 @@ function cargarHeaderYFooter() {
     
             // Actualizar las rutas de las imágenes en el footer
             var logoGrupo = document.querySelector(".logo-grupo");
-            logoGrupo.src = "./images/logo_grupo_8.png";
+            logoGrupo.src = relativePrefix + "images/logo_grupo_8.png";
     
             var logoCodoACodo = document.querySelector(".logo-codo-a-codo");
-            logoCodoACodo.src = "./images/logo_codo_a_codo.png";
+            logoCodoACodo.src = relativePrefix + "images/logo_codo_a_codo.png";
     });
 
 }    
