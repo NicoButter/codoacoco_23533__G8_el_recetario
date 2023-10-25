@@ -1,9 +1,7 @@
 function calcularNivelDirectorio() {
     var urlActual = window.location.href;
-    var url = new URL(urlActual);
-    var ruta = url.pathname;
-    var partesRuta = ruta.split("/");
-    var nivelSubdirectorio = partesRuta.length - 2; // Resta 2 porque el primer elemento es una cadena vacía
+    var partesURL = urlActual.split("/");
+    var nivelSubdirectorio = partesURL.length - 4; // Ajusta el valor según la estructura de tu proyecto en GitHub Pages
 
     // Si estás en la raíz, el prefijo es "./"
     if (nivelSubdirectorio <= 0) {
@@ -14,7 +12,6 @@ function calcularNivelDirectorio() {
 
     return "../".repeat(nivelSubdirectorio);
 }
-
 
 
 function cargarHeaderYFooter() {
