@@ -32,6 +32,8 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
+    align-items: center;
+    margin-top: 10px;
 }
 
 nav a {
@@ -44,6 +46,22 @@ nav a:hover {
     color: #CCD5AE;
 }
 
+.productos {
+    display: flex; /* Esto hará que los elementos se muestren en línea */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    margin-left: 20px; /* Agrega un espacio a la izquierda para separarlo de "Contacto" */
+    flex-direction: row-reverse;
+}
+
+#search-form {
+    display: flex; /* Esto coloca el formulario en línea con los elementos anteriores */
+    margin-right:20px;
+}
+
+#search-input {
+    margin-right: 10px; /* Agrega un espacio entre el campo de entrada y el botón */
+    margin-right:20px;
+}
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
