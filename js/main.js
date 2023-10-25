@@ -4,7 +4,7 @@ function calcularNivelDirectorio() {
     var nivelSubdirectorio = partesURL.length - 4; // Ajusta el valor según la estructura de tu proyecto en GitHub Pages
 
     // Si estás en la raíz, el prefijo es "./"
-    if (nivelSubdirectorio <= 0) {
+    if (nivelSubdirectorio <= 1) {
         return "./";
     }
 
