@@ -7,8 +7,15 @@ function calcularNivelDirectorio() {
     
     console.log("PartesURL.LENGTH es: " + partesURL.length);
 
-    var nivelSubdirectorio = partesURL.length - 3;
-    console.log("La resta es: " + (partesURL.length - 3));
+    if (urlActual.startsWith("https")) {
+        var nivelSubdirectorio = partesURL.length - 4;
+        console.log("La resta es: " + (partesURL.length - 4));
+        //nivelSubdirectorio -= 1;
+    }
+    else{
+        var nivelSubdirectorio = partesURL.length - 3;
+        console.log("La resta es: " + (partesURL.length - 3));
+    }
 
     console.log("las partesURL es resta: " + partesURL);
     console.log("El nivel actual es: " + nivelSubdirectorio);
