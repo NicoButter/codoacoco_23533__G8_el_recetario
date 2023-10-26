@@ -1,4 +1,5 @@
 * {
+    font-family: Poppins,sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -11,8 +12,6 @@ body {
     background-color: #FEFAE0;
     box-sizing: border-box;
 }
-
-
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
@@ -72,14 +71,6 @@ main {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 .featured-recipe {
     display: flex;
     /*flex-direction: column; /* Coloca los elementos en una columna*/
@@ -98,22 +89,6 @@ main {
 }
 
 .featured-recipe article {
-    flex: 0 0 calc(50% - 20px);
-    margin-bottom: 20px;
-    background-color: #FEFAE0; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    align-items: center;
-    
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-    margin: 0 10px;
-    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos*/
-
-    
-    
     flex: 0 0 calc(50% - 20px);
     margin-bottom: 20px;
     background-color: #FEFAE0; 
@@ -153,34 +128,6 @@ main {
     justify-content: space-between; /* Distribuye los artículos con espacio entre ellos*/ 
     gap: 20px; /* Espacio entre los artículos */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .latest-recipes {
     display: flex;
@@ -222,29 +169,6 @@ main {
 .latest-recipes article {
     flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos*/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Estilizar el formulario */
 #formulario-contacto {
