@@ -1,8 +1,10 @@
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
 .header {
-    position: sticky;
-    top: 0;
+    /*position: sticky;
+    top: 0;*/
+    
+    height: 10vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
@@ -10,23 +12,19 @@
     background-color: #CCD5AE;
     color: #fff;
     transition: all 0.5s; /* Transición suave de la propiedad de relleno (padding) */
-    /* padding: 5px; */
     height: 190px; /* Ajusta la altura*/
     z-index: 1;
 }  
+
 .header .logo {
     align-items: center;
 }
 
 .header .logo a img {
-    /* position: absolute;
-    top: 15%; */
-    /* left: 120px; */
     width: 140px;
     height: auto;
     object-fit: contain;
     object-position: center;
-    /* transform: translate(-50%); */
     transition: all 0.3s;
 }
 /* Estilos para el título dentro del encabezado */
@@ -130,7 +128,6 @@
     align-items: center;
     background: #CCD5AE;
     color: #CCD5AE;
-    /* font-size: 200px; */
     transition: 0.2s;
     border-radius: 50%;
 }
@@ -204,13 +201,86 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2px;
+    color: #000;
 }
 
 .header .redes-sociales h5 {
-    text-align: center;
+    text-align:inherit;
+
 } 
 
-  /* Extra small devices (phones, 600px and down) */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Pantallas más grandes, como tablets y escritorios */
+
+@media (min-width: 601px) {
+    
+    .header {
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
+        align-items: center; /* Centra verticalmente los elementos */
+        background-color: #CCD5AE;
+        color: #fff;
+        transition: all 0.5s; /* Transición suave de la propiedad de relleno (padding) */
+        height: 190px; /* Ajusta la altura*/
+        z-index: 1;
+    }
+}
+/* Pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 600px) {
+    .header {
+        display: block;
+        height: auto;
+        grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .redes-sociales {
+        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
+    }
+
+    .header .title h1 {
+        font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+  /* Extra small devices (phones, 600px and down) 
   @media only screen and (max-width: 600px) {
     .header {
         grid-template-columns: auto;
@@ -218,7 +288,7 @@
     }
 
     .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
+        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
         height: 350px;
         width: auto;
     }
@@ -227,7 +297,7 @@
     }
 }
   
-  /* Small devices (portrait tablets and large phones, 600px and up to 768px) */
+  /* Small devices (portrait tablets and large phones, 600px and up to 768px) 
   @media only screen and (min-width: 601px) and (max-width: 768px) {
     .header {
         grid-template-columns: auto;
@@ -235,7 +305,7 @@
     }
 
     .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
+        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
         height: 350px;
         width: auto;
     }
@@ -245,10 +315,10 @@
 
   }
   
-  /* Medium devices (landscape tablets, 768px and up to 992px) */
+  /* Medium devices (landscape tablets, 768px and up to 992px) 
   @media only screen and (min-width: 769px) and (max-width: 992px) {
     .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
+        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
         height: 350px;
         width: auto;
     }
@@ -257,12 +327,12 @@
     }
   } 
   
-  /* Large devices (laptops/desktops, 993px and up to 1200px) */
+  /* Large devices (laptops/desktops, 993px and up to 1200px) 
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     
   } 
   
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) 
   @media only screen and (min-width: 1201px) {
     
-  }
+  }*/
