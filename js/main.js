@@ -33,23 +33,15 @@ function calcularNivelDirectorio() {
     console.log("El nivel actual es: " + nivelSubdirectorio);
 }
 
-
 function cargarHeaderYFooter() {
 
     var relativePrefix = calcularNivelDirectorio();
     var rutaHeader = relativePrefix + "pages/header.html";
     var rutaFooter = relativePrefix + "pages/footer.html";
 
-    
-    
     console.log("La ruta al header es: " + rutaHeader);
     
     console.log("La ruta al footer es: " + rutaFooter);
-
-    // Construir la ruta al archivo del header
-    //var rutaHeader = "./pages/header.html";
-    // Construir la ruta al archivo del footer
-    //var rutaFooter = "./pages/footer.html";
         
     // Cargar el header
     fetch(rutaHeader)
@@ -131,6 +123,27 @@ function mostrarMensaje() {
     // Puedes personalizar el mensaje aquí
     alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.");
 }
+
+// // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Obtén una referencia al formulario y al campo de entrada
+const searchForm = document.getElementById("search-form");
+const searchInput = document.getElementById("search-input");
+
+searchForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // Evita que se envíe el formulario y se recargue la página
+
+    const searchTerm = searchInput.value;
+
+    if (searchTerm) {
+        // Realiza la solicitud a la API con el término de búsqueda
+        const apiUrl = `https://world.openfoodfacts.org/api/v2/product/${searchTerm}.json`;
+
+        // Abre una nueva ventana o pestaña con el resultado de la búsqueda
+        window.open(apiUrl);
+    }
+});
+
 
 
 
