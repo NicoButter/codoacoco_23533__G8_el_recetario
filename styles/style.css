@@ -294,13 +294,12 @@ main {
     color: #163d30; /* Cambia el color del texto al pasar el mouse */
 }
 
+@media (max-width: 768px) {
+    .featured-recipe article {
+        flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
+    }
+}
 
-
-/* //////< */
-
-
-
-/* ////////// */
 
 @media (max-width: 768px) {
     .latest-recipes article {
