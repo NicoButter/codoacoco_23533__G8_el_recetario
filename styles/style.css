@@ -96,7 +96,9 @@ main {
     transition: transform 0.3s ease-in-out;
     align-items: center;
 }
-
+.featured-recipe article iframe{
+    width: 100%;
+}
 .featured-recipe img {
     max-width: 80%;
     height: auto;
