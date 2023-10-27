@@ -51,7 +51,7 @@
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
     align-items: center; /* Centra verticalmente los elementos */
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: 100px; /* Permite que la altura se ajuste automáticamente */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
     /*z-index: 5;*/ 
 }
 
@@ -234,6 +234,10 @@
         height: auto;
         grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
         text-align: center; /* Centra el contenido */
+    }
+    .header.shrink {
+        grid-template-columns: 1fr;
+        /*z-index: 5;*/ 
     }
 
     .redes-sociales {
