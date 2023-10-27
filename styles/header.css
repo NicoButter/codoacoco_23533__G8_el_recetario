@@ -243,7 +243,11 @@
     .redes-sociales {
         margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
     }
-
+    .header.shrink .redes-sociales {
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    
     .header .title h1 {
         font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
