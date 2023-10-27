@@ -224,17 +224,12 @@ main {
     .featured-recipe article {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
-}
-
-
-@media (max-width: 768px) {
+    .latest-recipes h2 {
+        font-size: 60px;
+    }
     .latest-recipes article {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
-}
-
-/* Estilos para el nav en pantallas más pequeñas (ajuste de la posición hacia arriba) */
-@media (max-width: 768px) {
     nav {
         top: -20px; /* Ajusta la posición hacia arriba en 50px (ajusta el valor según tus necesidades) */
     }
