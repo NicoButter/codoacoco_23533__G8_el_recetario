@@ -1,4 +1,5 @@
 * {
+    font-family: Poppins,sans-serif;
     margin: 0;
     padding: 0;
   }
@@ -11,8 +12,6 @@ body {
     background-color: #FEFAE0;
     box-sizing: border-box;
 }
-
-
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
@@ -73,16 +72,35 @@ main {
 }
 
 .featured-recipe {
-    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
+    /*flex-direction: column; /* Coloca los elementos en una columna*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*align-items: center;*/
 }
 
+.featured-recipe h2 {
+    /*font-size: 5em;*/
+    max-width: 100%;
+    max-height: 100%;
+    font-size: 80px;
+    /* flex: 1;*/ 
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total*/ 
+}
+
+.featured-recipe article {
+    flex: 0 0 calc(50% - 20px);
+    margin-bottom: 20px;
+    background-color: #FEFAE0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    align-items: center;
+}
+.featured-recipe article iframe{
+    width: 100%;
+}
 .featured-recipe img {
-    max-width: 30%;
+    max-width: 80%;
     height: auto;
     transition: transform 0.3s ease-in-out;
     align-items: center;
@@ -91,25 +109,33 @@ main {
 .featured-recipe img:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
 }
 
-.featured-recipe h2 {
-    font-size: 5em;
-    max-width: 100%;
-    max-height: 100%;
+.featured-recipe iframe {
+    height: 350px;
 }
 
-.featured-recipe .brochet-guanaco {
-    max-width: 800px;
-    height: auto;
-    margin-left: 150px;
-    margin-right: 50px;
+.featured-recipe .recipe-media h3 {
+    font-size: 24px;
+}
+
+.featured-recipe article:hover {
+    transform: scale(1.07);
+}
+
+.featured-recipe .recipe-content {
+    display: flex; /* Utiliza flexbox para alinear los artículos en fila*/ 
+    flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila*/ 
+    justify-content: space-between; /* Distribuye los artículos con espacio entre ellos*/ 
+    gap: 20px; /* Espacio entre los artículos */
 }
 
 .latest-recipes {
     display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-
+    /*flex-direction: column; /* Coloca los elementos en una columna*/ 
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .latest-recipes img {
@@ -133,12 +159,7 @@ main {
 .latest-recipes h2 {
     font-size: 80px;
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-
 }
-
-/************************************************************************** Estilos para el main ********************************************************************/
-
-/* Estilos para el contenedor de recetas */
 
 .latest-recipes .recipe-container {
     display: flex; /* Utiliza flexbox para alinear los artículos en fila */
@@ -147,10 +168,8 @@ main {
     gap: 20px; /* Espacio entre los artículos */
 }
 
-/* Estilos para los artículos en "Últimas Recetas" */
-
 .latest-recipes article {
-    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos */
+    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos*/
 }
 
 /* Estilizar el formulario */
@@ -201,35 +220,20 @@ main {
     color: #163d30; /* Cambia el color del texto al pasar el mouse */
 }
 
-.latest-recipes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.latest-recipes .recipe-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.latest-recipes article {
-    flex: 0 0 calc(50% - 20px);
-    margin-bottom: 20px;
-    background-color: #FEFAE0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
 @media (max-width: 768px) {
+    .featured-recipe article {
+        flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
+    }
+    .latest-recipes h2 {
+        font-size: 60px;
+    }
     .latest-recipes article {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
-}
-
-/* Estilos para el nav en pantallas más pequeñas (ajuste de la posición hacia arriba) */
-@media (max-width: 768px) {
     nav {
         top: -20px; /* Ajusta la posición hacia arriba en 50px (ajusta el valor según tus necesidades) */
+    }
+    .featured-recipe h2 {
+        font-size: 60px;
     }
 }

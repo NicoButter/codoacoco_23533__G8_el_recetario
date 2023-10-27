@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
-    
-    
-    
-    
-    <!-- <base id="base" href="nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
-    
-    <!-- <base id="base" href="/"/> -->
-
-    
     <!-- Estilo general -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
@@ -23,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./images/apple-icon-60x60.png">
@@ -55,14 +45,10 @@
     
     <div class="nav">
         <nav>
-            
-
             <ul>
                 <li><a href="./index.html">Inicio</a></li>
-                <!-- <li><a href="#">Recetas</a></li> -->
                 <li><a href="./pages/contacto.html">Contacto</a></li>
             </ul>
-
             <div class="productos">
                 <h3>busca un producto</h3>
                 <form id="search-form">
@@ -72,22 +58,32 @@
             </div>
         </nav>
     </div>
-    
-    
-    <main>
-
         
-
+    <main>
         <section class="featured-recipe">
             <h2>Receta del día</h2>
-            <article>
-                <img src="./images/pizza_margarita.jpg" alt="Pizza Margarita">
-                <h3>Pizza Margarita</h3>
-                <p>Disfruta de esta deliciosa pizza casera con tomate, mozzarella y albahaca.</p>
-                <a href="#">Ver Receta</a>
-            </article>
+            <div class="recipe-content">
+                <article>
+                    <img src="./images/pizza_margarita.jpg" alt="Pizza Margarita">
+                    <h3>Pizza Margarita</h3>
+                    <p>Disfruta de esta deliciosa pizza casera con tomate, mozzarella y albahaca.</p>
+                    <a href="#">Ver Receta</a>
+                </article>
+                <article>
+                    <h3>los Petersen te enseñan a hacer un cordero al asador</h3> <!-- Nuevo título del video -->
+                    <iframe src="https://www.youtube.com/embed/OFlcHy0Cz58" 
+                            title="Los Petersen en la Patagonia - Cordero patagónico al asador" 
+                            frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                    <h3>hoy se destaca Buffalo! proba su carta!</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1041.6132626854817!2d-69.21392159644708!3d-51.61610488039495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb6f94d2dd5b0eb%3A0x91362501ab152a27!2sBuffalo%20Rock!5e0!3m2!1ses!2sar!4v1698357395350!5m2!1ses!2sar" 
+                        style="border:1;" allowfullscreen="" loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </article>
+            </div>
         </section>
-
         <section class="latest-recipes">
             <h2>Últimas Recetas</h2>
             <div class="recipe-container">
@@ -112,6 +108,5 @@
     
     <!-- Enlaza el archivo JavaScript -->
     <script src="./js/main.js"></script>
-
 </body>
 </html>

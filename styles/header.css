@@ -51,7 +51,7 @@
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
     align-items: center; /* Centra verticalmente los elementos */
     padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: 100px; /* Permite que la altura se ajuste automáticamente */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
     /*z-index: 5;*/ 
 }
 
@@ -235,11 +235,19 @@
         grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
         text-align: center; /* Centra el contenido */
     }
+    .header.shrink {
+        grid-template-columns: 1fr;
+        /*z-index: 5;*/ 
+    }
 
     .redes-sociales {
         margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
     }
-
+    .header.shrink .redes-sociales {
+        margin-right: 40px;
+        margin-left: 20px;
+    }
+    
     .header .title h1 {
         font-size: 20px; /* Tamaño de fuente más pequeño para dispositivos móviles */
     }
