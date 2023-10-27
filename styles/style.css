@@ -233,4 +233,7 @@ main {
     nav {
         top: -20px; /* Ajusta la posición hacia arriba en 50px (ajusta el valor según tus necesidades) */
     }
+    .featured-recipe h2 {
+        font-size: 60px;
+    }
 }
