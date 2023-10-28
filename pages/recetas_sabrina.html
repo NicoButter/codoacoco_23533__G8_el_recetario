@@ -42,11 +42,16 @@
 
 </head>
 <body>
+    <header id= "header" class="header">
+    </header>
     
-    <!-- El header se carga dinamicamente -->
-    <header id="header" class="header"></header>
-    
-    <div class="nav">
+    <section class="navegacion">
+        <div class="ruta">
+            <ul>
+                <li><a href="../index.html">Home</a> > </li>
+                <li><a href="../pages/recetas_pablo.html">Pablo</a> </li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -54,35 +59,52 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </div>
+    </section>
     
     
     <main>
+        
+        <section class="chef">
+           <div class="foto"><img src="../images/foto_sabrina.jpg" alt="Icono"></div>
+           <h2 class="Nombre">Pablo Iglesias</h2>
+           <article>La chef Sabrina Johanna Fleita empezó a trabajar en cocina allá por el año...</article>
+        </section>
 
-<div class="recetas">
-    <h1>Recetas</h1>
-    <div class="receta1">
-        <div class="receta1-name"><h2>Pollo grille</h2></div>
-        <img class="receta1-img" src="../images/pollo grille.JPG" alt="imagen_pollo_grille">
-    </div>
-    <div class="receta2">
-        <div class="receta2-name"><h2>Fideuá</h2></div>
-        <img class="receta2-img" src="../images/fideua.JPG" alt="imagen_fideua">
-    </div>
-    <div class="receta3">
-        <div class="receta3-name"><h2>Filet mignon</h2></div>
-        <img class="receta3-img" src="../images/filet  mignon.webp" alt="imagen_receta_filet_mignon">
-    </div>
-    
-</div>
-
+        
+        <section class="listado-recetas"> 
+            <h2 class="titulo">Sus Recetas</h2>
+            <div class="receta">
+                <a href="/pages/Sabri/fideua.html">
+                    <div class="receta-imagen"><img src="/images/fideua.JPG alt=""></div>  
+                    <div class="receta-nombre">Fideuá
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>  
+                </a>
+            </div>
+            <div class="receta">
+                <a href="/pages/Sabri/filetmignon.html">
+                    <div class="receta-imagen"><img src="/images/filet  mignon.webp" alt=""></div>  
+                    <div class="receta-nombre">Filet mignon
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>    
+                </a>
+            </div>
+            <div class="receta">
+                <a href="/pages/Sabri/pollogrille.html">
+                    <div class="receta-imagen"><img src="/images/pollo grille.JPG" alt=""></div>         
+                    <div class="receta-nombre">Pollo grille
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
     
-    <!-- El footer se carga de forma dinamica externa -->
+    
     <footer id="footer"></footer>
 
     <!-- Enlaza el archivo JavaScript -->
-    <script src="../js/main.js"></script> 
-
+    <script src="../js/main.js"></script> <!-- Enlaza el archivo JavaScript -->
+   
 </body>
 </html>
