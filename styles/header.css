@@ -44,8 +44,7 @@
 /************************************************************************* Estilos para el header cuando se achica (shrink) *********************************************************************/
 
 .header.shrink {
-    position: sticky;
-    top: 0;
+    position: fixed;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */

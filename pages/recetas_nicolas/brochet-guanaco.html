@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
-    <!-- <base id="base" href="nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
-    <!-- <base id="base" href="/"/> -->
-
-    
-    <!-- Estilos -->
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/footer.css">
-    <link rel="stylesheet" href="../../styles/nicorecetas.css">
+    <link rel="stylesheet" href="../../styles/receta.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,25 +40,30 @@
 <body>
     
     <!-- El header se carga de forma dinamica -->
-    <header id="header" class="header"></header>
+    <header id= "header" class="header"></header>
     
     <section class="navegacion">
-    
+        <div class="ruta">
+            <ul>
+                <li><a href="../../index.html">Home</a> > </li>
+                <li><a href="../nicorecetas.html">Nicolas</a> > </li>
+                <li><a href="../recetas_nicolas/brochet-guanaco.html">Brochet de Guanaco</a> </li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <li><a href="../../pages/contacto.html">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-    </section>  
-       
+    </section>   
     <main>
         <section class="receta-titulo">
             <article>
                 <div class="texto">
-                    <h2>Brochet de guanaco</h2>
-                    <p>Aprende a realizar esta deliciosa receta realizada por nuestro chef Nicolás Butterfield.</p>
+                    <h2>Brochete de guanaco</h2>
+                    <p>Aprende a realizar esta deliciosa receta de Brochete de guanaco realizada por nuestro chef Nicolas Butterfield en minutos</p>
                 </div>
             </article>    
             <div class="receta-imagen"><img src="../../images/brochet_guanaco.png" alt=""></div>
@@ -72,20 +71,36 @@
         <section class="receta-detalle">
             <article class="ingredientes">
                 
-                <p><h3>
-                    En un bol colocar 200 ml de aceite de oliva, 2 cucharaditas de vinagre de vino blanco, 2 cucharadas de cilantro 
-                picado fino, 2  cucharadas de perejil picado fino, 2 cucharadas de ciboulette picada y 4 cucharadas de mermelada 
-                de ruibarbo, mezclar hasta integrar y sazonar con sal y pimienta. Agregar la carne al bol, tapar con papel 
-                plástico y dejar marinar en el refrigerador 3 horas. En palos de bambú o de lengas previamente humedecidos, armar 
-                las brochetas insertando alternadamente carne y trozos de cebolla. Reservar la marinada. En una parrilla 
-                encendida a fuego medio colocar las brochetas y asar 8-10 minutos por cada lado, dando vueltas ocasionalmente 
-                y pincelando con la marinada reservada. Retirar de la parrilla y servir de inmediato.
-                </h3></p>
-                
+                <ul>Ingredientes Para la Base:
+                    <li><div>Galletas lincoln</div><div>255 grs</div></li>
+                    <li><div>Azucar impalpable</div><div>45 grs</div></li>
+                    <li><div>Licor de naranja</div><div>45 cc</div></li>
+                    <li><div>Manteca</div><div>75 gr</div></li>
+                </ul>
+                <ul>Ingredientes Para el Relleno:
+                    <li><div>Queso crema</div><div>125 grs</div></li>
+                    <li><div>Azucar</div><div>225 grs</div></li>
+                    <li><div>Huevo</div><div>248 grs (5 -6u)</div></li>
+                    <li><div>Almidon de maiz</div><div>15 grs</div></li>
+                    <li><div>Crema de leche</div><div>75 cc</div></li>
+                    <li><div>Esencia de vainilla</div><div>1 cda</div></li>
+                    <li><div>Jugo de limon</div><div>30 cc</div></li>
+                </ul>
+            </article>
+            <article class="preparacion"><h2>Preparacion:</h2>
+                <ul>
+                    <li><div>Mezclar queso crema con azucar, luego agregar los huevos.</div></li>
+                    <li><div>Mezclar el jugo de limon con la esencia y el almidon.</div></li>
+                    <li><div>Agregar esta mezcla a la de queso, mezclar bien. Por ultimo incorporar la crema de leche</div></li>
+                    <li><div>Colocar sobre la base de galletitas y llevar a horno bajo (150 grados) y tapar con papel aluminio. Retirar el papel a los 40 min y verificar el punto. Es problable que necesite 10-15 min más de cocción.</div></li>
+                    <li><div>El punto para apagar el horno es cuando el centro apenas se mueva. En ese momento se debe apagar el horno y dejar el cheesecake enfriar alli durante 40 min. Luego retirar del horno y dejar a temperatura ambiente hasta que baje su temperatura y recien despues llevar a la heladera.</div></li>
+                    <li><div>Se debe cortar cuando está muy frio. Si es necesario se debe llevar un rato al freezer.</div></li>
+                </ul>    
+            </article>
         </section>
     </main>
     
-    <!-- El footer se carga de forma dinamica -->
+    <!-- El header se cargade forma dinamica -->
     <footer id="footer"></footer>
 
     <!-- Enlaza el archivo JavaScript -->
