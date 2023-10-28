@@ -5,12 +5,15 @@
   font-family: Poppins,sans-serif;
   padding-left: 50px;
 }
+
 .ruta{
   text-align: left;
 }
+
 .ruta ul {
     list-style: none;
 }
+
 .ruta ul li{
     display: inline-block;
 }
@@ -64,78 +67,89 @@
     /* padding: 10px; */
   }
   
-  .listado-recetas .titulo{
-    font-family: Poppins,sans-serif;
-    text-align: left;
-    grid-column-start: 1;
-    grid-column-end: 4; 
-  }
-  .receta {
-    border: 1px solid black;    
-    text-align: center;
-    height: 350px;
-    width: 300px;
-    background-color: #163d30;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-  }
-  .receta:hover{
-    cursor:grab;
-  }
-.receta a:link, .receta a:visited, .receta a:hover, .receta a:active{
-    text-decoration: none;
+.listado-recetas .titulo{
+  font-family: Poppins,sans-serif;
+  text-align: left;
+  grid-column-start: 1;
+  grid-column-end: 4; 
+ }
+
+.receta {
+  border: 1px solid black;    
+  text-align: center;
+  height: 350px;
+  width: 300px;
+  background-color: #163d30;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
-  .receta-imagen {
-    overflow: hidden;
-    object-position: center;
-    height: 80%;
-    width: 100%;
-    border: 1px solid black;
-    transition: all 0.5s ease;
-  }
-  .receta-imagen img{
-    width: 100%;
-    height: auto;
-    transition: all 0.5s;
-  }
-  .receta:hover .receta-imagen img{
-    transform: scale(1.2);
-  }
-  .receta:hover .receta-imagen {
-    height: 60%;
-  }
-  .receta:hover .receta-nombre {
-    height: 40%;
-  }
-  .receta:hover .receta-cuadro {
-    color:#163d30;
-    border: 1px solid black;
-    background-color: #f3c439;
-  }
-  .receta-nombre {
-    font-size: 20px;
-    font-family: Poppins,sans-serif;
-    display: grid;
-    color: white;
-    width: 100%;
-    height: 20%;
-    font-weight: bolder;
-    place-items: center;
-    transition: all 0.5s ease; 
-  }
-  .receta-cuadro {
-    font-size: 20px;
-    font-family: Poppins,sans-serif;
-    display: grid;
-    width: 80%;
-    height: 80%;
-    padding: auto;
-    margin: auto;
-    color: #163d30;
-    background-color: #163d30;
-    font-weight: bolder;
-    place-items: center;
-    transition: all 0.5s ease; 
-  }
+
+.receta:hover{
+  cursor:grab;
+}
+
+.receta a:link, .receta a:visited, .receta a:hover, .receta a:active{
+  text-decoration: none;
+}
+
+.receta-imagen {
+  overflow: hidden;
+  object-position: center;
+  height: 80%;
+  width: 100%;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+.receta-imagen img{
+  width: 100%;
+  height: auto;
+  transition: all 0.5s;
+}
+
+.receta:hover .receta-imagen img{
+  transform: scale(1.2);
+}
+
+.receta:hover .receta-imagen {
+  height: 60%;
+}
+
+.receta:hover .receta-nombre {
+  height: 40%;
+}
+
+.receta:hover .receta-cuadro {
+  color:#163d30;
+  border: 1px solid black;
+  background-color: #f3c439;
+}
+
+.receta-nombre {
+  font-size: 20px;
+  font-family: Poppins,sans-serif;
+  display: grid;
+  color: white;
+  width: 100%;
+  height: 20%;
+  font-weight: bolder;
+  place-items: center;
+  transition: all 0.5s ease; 
+ }
+
+.receta-cuadro {
+  font-size: 20px;
+  font-family: Poppins,sans-serif;
+  display: grid;
+  width: 80%;
+  height: 80%;
+  padding: auto;
+  margin: auto;
+  color: #163d30;
+  background-color: #163d30;
+  font-weight: bolder;
+  place-items: center;
+  transition: all 0.5s ease; 
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -182,62 +196,3 @@
 @media only screen and (min-width: 1201px) {
   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*.chef-nicolas {
-  display: grid;
-  justify-content: space-evenly;
-  align-items: center;
-  grid-template-columns: auto auto auto;
-  padding: 50px;
-  column-gap: 50px;
-}
-
-.chef-nicolas .foto {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid black;   
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  background-color: #CCD5AE;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  grid-row-start: 1;
-  grid-row-end: 3; 
-  border-radius: 50%;
-}
-
-.chef-nicolas .foto img{
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transition: all 0.5s;
-}
-
-.chef-nicolas .Nombre {
-  text-align: left;
-  font-family: Poppins,sans-serif;
-  grid-column:2/4;
-}
-
-.chef-nicolas article {
-  text-align: left;
-  grid-column:2/4;
-  font-family: Poppins,sans-serif;
-}*/
