@@ -40,6 +40,22 @@
     <!-- El header se carga de forma externa -->
     <header id="header" class="header"></header>
 
+    <div class="nav">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="productos">
+                <h3>busca un producto</h3>
+                <form id="search-form" action="pages/producto.html" method="get">
+                    <input type="text" id="search-input" name="product-name" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
 
     <div id="product-container">
         <!-- Aquí se mostrarán los detalles del producto -->
