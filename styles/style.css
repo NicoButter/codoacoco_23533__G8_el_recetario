@@ -15,7 +15,7 @@ body {
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
-nav {
+.nav {
     position: sticky;
     top: 0px; /* Fija el nav en la parte superior de la ventana */
     left: 0; /*Fija el nav en la parte izquierda de la ventana*/
@@ -23,26 +23,27 @@ nav {
     background-color: #FEFAE0;
 }
 
-nav ul {
+.nav ul {
+    color: #000;
     list-style-type: none;
     text-align: center;
 }
 
-nav li {
+.nav li {
     display: inline;
     margin-right: 20px;
     align-items: center;
     margin-top: 10px;
 }
 
-nav a {
+.nav ul a {
     text-decoration: none;
-    color: #333;
+    color: #000;
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
-    color: #CCD5AE;
+.nav a:hover {
+    color: #333;
 }
 
 .productos {
@@ -61,6 +62,7 @@ nav a:hover {
     margin-right: 10px; /* Agrega un espacio entre el campo de entrada y el botón */
     margin-right:20px;
 }
+
 /*///////////////////////////////////////////// ESTILOS PARA MAIN SECTION ////////////////////////////////////////////////////////////*/
 
 main {
@@ -240,8 +242,8 @@ main {
 }
 
 .product {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #ccd5ae;
+    border: 1px solid #ccd5ae;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
@@ -256,8 +258,8 @@ main {
 }
 
 #product-container div {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #e9edc9;
+    border: 1px solid #ccd5ae;
     padding: 20px;
     margin: 10px;
     width: 200px; /* Establece un ancho fijo para todos los contenedores de imágenes */
@@ -297,17 +299,17 @@ main {
 #product-container p {
     text-align: center;
     font-size: 1rem;
-    color: #666;
+    color: #000;
     margin-bottom: 10px;
 }
 
 a:link {
-    color: #0077ff; /* Cambia el color del enlace no visitado */
+    color: #000; /* Cambia el color del enlace no visitado */
     text-decoration: none; /* Elimina el subrayado */
 }
 
 a:visited {
-    color: #9900cc; /* Cambia el color del enlace visitado */
+    color: #faedcd; /* Cambia el color del enlace visitado */
 }
 
 a:hover {
@@ -315,10 +317,44 @@ a:hover {
 }
 
 a:active {
-    color: #ff0000; /* Cambia el color cuando se hace clic en el enlace */
+    color: #000; /* Cambia el color cuando se hace clic en el enlace */
 }
 
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 
 

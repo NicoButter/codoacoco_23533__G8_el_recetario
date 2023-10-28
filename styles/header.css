@@ -1,9 +1,6 @@
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
 .header {
-    /*position: sticky;
-    top: 0;*/
-    
     height: 10vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,9 +34,6 @@
     /* font-size: 65px; */
     transition: all 0.5s;
 }
-/*.header nav {
-    order: 8; /* Cambia el orden para que esté debajo del título ese no  se como me salio*/
-
 
 /************************************************************************* Estilos para el header cuando se achica (shrink) *********************************************************************/
 
