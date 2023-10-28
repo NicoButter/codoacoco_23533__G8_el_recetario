@@ -223,13 +223,36 @@ main {
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-/* Estilos para los elementos dentro de product-container en product.html */
+
 #product-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px; /* Espacio entre productos */
+
+
+
+    /* display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;  
     justify-content: space-around;
     align-items: flex-start;
-    margin-top: 20px;
+    margin-top: 20px; */
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product:nth-child(3n) {
+    margin-bottom: 20px;
 }
 
 #product-container div {
@@ -237,35 +260,63 @@ main {
     border: 1px solid #ccc;
     padding: 20px;
     margin: 10px;
-    width: calc(30% - 20px); /* Tres elementos por fila */
+    width: 200px; /* Establece un ancho fijo para todos los contenedores de imágenes */
+    height: 250px; /* Establece una altura fija para todos los contenedores de imágenes */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
+
 
 #product-container div:hover {
     transform: scale(1.05);
 }
 
+#product-container img {
+    width: 100px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 100px;
+    object-fit: cover;
+    margin: 10px 0; /* Espacio entre la imagen y los detalles */
+}
+
 #product-container h2 {
+    max-height: 4em; /* Altura máxima de tres líneas */
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin: 10px 0; /* Espacio entre el título y otros detalles*/ 
+    
 }
 
 #product-container p {
+    text-align: center;
     font-size: 1rem;
     color: #666;
+    margin-bottom: 10px;
 }
 
+a:link {
+    color: #0077ff; /* Cambia el color del enlace no visitado */
+    text-decoration: none; /* Elimina el subrayado */
+}
 
+a:visited {
+    color: #9900cc; /* Cambia el color del enlace visitado */
+}
 
+a:hover {
+    text-decoration: underline; /* Agrega un subrayado al pasar el mouse */
+}
 
-
-
-
-
-
-
+a:active {
+    color: #ff0000; /* Cambia el color cuando se hace clic en el enlace */
+}
 
 
 

@@ -17,16 +17,24 @@ document.addEventListener("DOMContentLoaded", function() {
             if (data.products.length > 0) {
                 const productContainer = document.getElementById("product-container");
 
-                // Itera a través de los productos y crea elementos para mostrarlos
-                data.products.forEach(product => {
-                    const productElement = document.createElement("div");
-                    productElement.innerHTML = `
-                        <h2>${product.product_name}</h2>
-                        <p>${product.generic_name}</p>
-                        <!-- Agrega más detalles aquí -->
-                    `;
-                    productContainer.appendChild(productElement);
-                });
+                // Dentro del bucle que itera a través de los productos
+data.products.forEach(product => {
+    const productContainer = document.getElementById("product-container");
+
+    // Crea un enlace para mostrar los detalles del producto
+    const productLink = document.createElement("a");
+    productLink.href = `product-detail.html?product_id=${product._id}`; // Agrega un parámetro para identificar el producto
+    productLink.innerHTML = `
+        <div>
+            <h2>${product.product_name}</h2>
+            <img src="${product.image_url}" alt="${product.product_name}">
+            <p>${product.generic_name}</p>
+            <!-- Agrega más detalles aquí -->
+        </div>
+    `;
+    productContainer.appendChild(productLink);
+});
+
             } else {
                 productDetails.textContent = "Producto no encontrado";
             }
