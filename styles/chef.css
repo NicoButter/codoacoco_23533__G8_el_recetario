@@ -1,6 +1,6 @@
 .navegacion{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   text-align: center;
   font-family: Poppins,sans-serif;
   padding-left: 50px;
