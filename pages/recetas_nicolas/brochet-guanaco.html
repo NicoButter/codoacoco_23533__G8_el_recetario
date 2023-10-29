@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
-    <!-- <base id="base" href="nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
-    <!-- <base id="base" href="/"/> -->
-
-    
-    <!-- Estilos -->
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/footer.css">
-    <link rel="stylesheet" href="../../styles/nicorecetas.css">
+    <link rel="stylesheet" href="../../styles/receta.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,25 +40,30 @@
 <body>
     
     <!-- El header se carga de forma dinamica -->
-    <header id="header" class="header"></header>
+    <header id= "header" class="header"></header>
     
     <section class="navegacion">
-    
+        <div class="ruta">
+            <ul>
+                <li><a href="../../index.html">Home</a> > </li>
+                <li><a href="../nicorecetas.html">Nicolas</a> > </li>
+                <li><a href="../recetas_nicolas/brochet-guanaco.html">Brochet de Guanaco</a> </li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <li><a href="../../pages/contacto.html">Contacto</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
-    </section>  
-       
+    </section>   
     <main>
         <section class="receta-titulo">
             <article>
                 <div class="texto">
-                    <h2>Brochet de guanaco</h2>
-                    <p>Aprende a realizar esta deliciosa receta realizada por nuestro chef Nicolás Butterfield.</p>
+                    <h2>Brochete de guanaco</h2>
+                    <p>Aprende a realizar esta deliciosa receta de Brochete de guanaco realizada por nuestro chef Nicolas Butterfield en minutos</p>
                 </div>
             </article>    
             <div class="receta-imagen"><img src="../../images/brochet_guanaco.png" alt=""></div>
@@ -72,20 +71,34 @@
         <section class="receta-detalle">
             <article class="ingredientes">
                 
-                <p><h3>
-                    En un bol colocar 200 ml de aceite de oliva, 2 cucharaditas de vinagre de vino blanco, 2 cucharadas de cilantro 
-                picado fino, 2  cucharadas de perejil picado fino, 2 cucharadas de ciboulette picada y 4 cucharadas de mermelada 
-                de ruibarbo, mezclar hasta integrar y sazonar con sal y pimienta. Agregar la carne al bol, tapar con papel 
-                plástico y dejar marinar en el refrigerador 3 horas. En palos de bambú o de lengas previamente humedecidos, armar 
-                las brochetas insertando alternadamente carne y trozos de cebolla. Reservar la marinada. En una parrilla 
-                encendida a fuego medio colocar las brochetas y asar 8-10 minutos por cada lado, dando vueltas ocasionalmente 
-                y pincelando con la marinada reservada. Retirar de la parrilla y servir de inmediato.
-                </h3></p>
-                
+                <ul>Ingredientes:
+                    <ul>Ingredientes:
+                        <li><div>Carne de guanaco</div><div>500 grs</div></li>
+                        <li><div>Pimiento rojo</div><div>1 unidad</div></li>
+                        <li><div>Pimiento verde</div><div>1 unidad</div></li>
+                        <li><div>Cebolla</div><div>1 unidad</div></li>
+                        <li><div>Tomates cherry</div><div>200 grs</div></li>
+                        <li><div>Champiñones</div><div>150 grs</div></li>
+                        <li><div>Salsa de soja</div><div>2 cucharadas</div></li>
+                        <li><div>Aceite de oliva</div><div>2 cucharadas</div></li>
+                        <li><div>Sal y pimienta al gusto</div></li>
+                        <li><div>Palitos de brocheta</div></li>
+                    </ul>
+                </ul>
+            </article>
+            <article class="preparacion"><h2>Preparacion:</h2>
+                <ul>
+                    <li><div>Marinar la carne de guanaco con las especias y el aceite durante al menos 2 horas.</div></li>
+                    <li><div>Ensamblar las brochetas alternando trozos de carne con las verduras.</div></li>
+                    <li><div>Asar las brochetas en la parrilla o en un sartén caliente hasta que la carne esté dorada y cocida a tu gusto.</div></li>
+                    <li><div>Servir las brochetas de guanaco con tu salsa o aderezo favorito.</div></li>
+                    <li><div>¡Disfrutar de esta deliciosa preparación de brochetas de guanaco!</div></li>
+                </ul> 
+            </article>
         </section>
     </main>
     
-    <!-- El footer se carga de forma dinamica -->
+    <!-- El header se cargade forma dinamica -->
     <footer id="footer"></footer>
 
     <!-- Enlaza el archivo JavaScript -->

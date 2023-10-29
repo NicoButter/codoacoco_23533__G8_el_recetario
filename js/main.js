@@ -145,6 +145,20 @@ searchForm.addEventListener("submit", function (e) {
 });
 
 
+// //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+    const searchForm = document.getElementById("search-form");
+
+    searchForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const searchInput = document.getElementById("search-input").value;
+
+        // Redirige al usuario a la nueva página con el valor de búsqueda como parámetro
+        window.location.href = `product.html?product-name=${searchInput}`;
+    });
+});
+
 
 
 

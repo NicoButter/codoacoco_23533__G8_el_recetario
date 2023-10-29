@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
-    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
-    <!-- <base id="base" href="/"/> -->
-
+    
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/header.css">
     <link rel="stylesheet" href="../../styles/footer.css">
-    <link rel="stylesheet" href="../../styles/nicorecetas.css">
+    <link rel="stylesheet" href="../../styles/receta.css">
     
     <!--Enlace a Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,16 +38,23 @@
 
 </head>
 <body>
-    <header id="header" class="header">
-    </header>
+    
+    <!-- El header se carga de forma dinamica -->
+    <header id= "header" class="header"></header>
     
     <section class="navegacion">
-    
+        <div class="ruta">
+            <ul>
+                <li><a href="../../index.html">Home</a> > </li>
+                <li><a href="../nicorecetas.html">Nicolas</a> > </li>
+                <li><a href="../recetas_nicolas/cordero-asado.html">Cordero asado</a> </li>
+            </ul>
+        </div>
         <nav>
             <ul>
                 <li><a href="../../index.html">Inicio</a></li>
                 <!-- <li><a href="#">Recetas</a></li> -->
-                <li><a href="../../pages/contacto.html">Contacto</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </section>   
@@ -60,91 +63,37 @@
             <article>
                 <div class="texto">
                     <h2>Cordero asado</h2>
-                    <p>Aprende a realizar esta deliciosa receta realizada por nuestro chef Nicolás Butterfield.</p>
+                    <p>Aprende a realizar esta deliciosa receta de cordero asado realizada por nuestro chef Nicolas Butterfield en minutos</p>
                 </div>
             </article>    
             <div class="receta-imagen"><img src="../../images/cordero-asado.jpg" alt=""></div>
         </section>
         <section class="receta-detalle">
             <article class="ingredientes">
-                
+                <ul>Ingredientes para el Cordero Asado:
+                    <li><div>Cordero (entero o en trozos)</div><div>2-3 kg</div></li>
+                    <li><div>Aceite de oliva</div><div>1/4 de taza</div></li>
+                    <li><div>Jugo de limón</div><div>2 cucharadas</div></li>
+                    <li><div>Ajo (picado)</div><div>4-6 dientes</div></li>
+                    <li><div>Romero fresco (o seco)</div><div>2 cucharaditas</div></li>
+                    <li><div>Tomillo fresco (o seco)</div><div>2 cucharaditas</div></li>
+                    <li><div>Sal y pimienta al gusto</div></li>
+                </ul>
+            </article>
+            <article class="preparacion"><h2>Preparacion:</h2>
                 <ul>
-                    <p><h3>Ingredientes</h3>
-                        <h4>Sal A gusto
-                            Costillar de cordero
-                            1 Unidad
-                            Aceite de oliva
-                            cda.
-                            Puré de Batatas
-                            Crema de leche
-                            100 cc
-                            Sal y pimienta
-                            A gusto
-                            Aceitunas negras
-                            150 g
-                            Batatas
-                            4 Unidades
-                            Salsa
-                            Echalotte
-                            1 Unidad
-                            Vino tinto
-                            200 cc
-                            Sal y pimienta
-                            A gusto
-                            Manteca
-                            50 g
-                            Tapenade
-                            Piñones
-                            1 cda.
-                            Torre de Vegetales
-                            Zucchinis
-                            2 Unidades
-                            Berenjenas
-                            2 Unidades
-                            Sal
-                            A gusto
-                            Morrones amarillos
-                            2 Unidades
-                            Morrones colorados
-                            2 Unidades
-                            Aceite de oliva
-                            Cantidad necesaria
-                            Morrones verdes
-                        </h4>2 Unidades
-
-                        <h3>Preparacion:</h3>
-
-                        Separe las costillas de cordero y raspe los huesos hasta dejarlos limpios.
-                        En una sartén con aceite de oliva selle las costillas de cordero.
-                        Pase a una platina, sale y termine la cocción en el horno.
-                        Salsa
-                        Pique finamente la echalote.
-                        En la misma sartén donde selló el cordero saltee la echalote.
-                        Deglase con el vino y deje reducir un poco.
-                        Salpimente.
-                        Monte con la manteca fría.
-                        Torre de vegetales
-                        Pincele los morrones, con aceite de oliva y ase en el horno.
-                        Corte los morrones en discos.
-                        Corte las berenjenas y los zucchini en finas rodajas.
-                        Rocíe el grill caliente con aceite de oliva y cocine los morrones, los zucchini y las berenjenas.
-                        Condimente con sal.
-                        Puré de batatas
-                        Descaroce las aceitunas y corte en octavos.
-                        Reserve.
-                        Pele las batatas y cocine en abundante agua hirviendo.
-                        Cuele y procese a puré con un poco del agua de cocción.
-                        Añada la crema de leche y las aceitunas.
-                        Salpimente.
-                        Presentación
-                        En el costado de un plato forme una torre alternando los morrones, zucchini y berenjena, en otro costado el cordero y el otro costado el puré.
-                        Alrededor sirva la salsa.
-                    </h3></p>
+                    <li><div>Lava y seca el cordero. Si está entero, ábrelo por la mitad y coloca en una fuente grande.</div></li>
+                    <li><div>Mezcla el aceite de oliva, el jugo de limón, el ajo picado, el romero, el tomillo, la sal y la pimienta en un tazón.</div></li>
+                    <li><div>Vierte esta mezcla sobre el cordero, asegurándote de que quede bien cubierto. Deja marinar durante al menos 2 horas en el refrigerador.</div></li>
+                    <li><div>Prepara tu parrilla o asador a fuego medio-alto.</div></li>
+                    <li><div>Cocina el cordero asado en la parrilla durante aproximadamente 20-30 minutos por cada lado, o hasta que esté dorado y cocido a tu gusto.</div></li>
+                    <li><div>Retira el cordero del fuego y déjalo reposar durante unos minutos antes de cortarlo en porciones. Sirve caliente y disfruta de tu cordero asado.</div></li>
+                </ul>   
             </article>
         </section>
     </main>
     
-    <!-- El footer se carga de forma dinamica -->
+    <!-- El header se cargade forma dinamica -->
     <footer id="footer"></footer>
 
     <!-- Enlaza el archivo JavaScript -->
