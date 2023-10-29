@@ -93,6 +93,9 @@ function cargarHeaderYFooter() {
     
             var logoCodoACodo = document.querySelector(".logo-codo-a-codo");
             logoCodoACodo.src = relativePrefix + "images/logo_codo_a_codo.png";
+
+            var enlaceContacto = document.querySelector(".enlace-contacto");
+            enlaceContacto.src = relativePrefix + "pages/contacto.html";
     });
 
 }    
