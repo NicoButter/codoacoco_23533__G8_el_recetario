@@ -225,6 +225,7 @@
     .header {
         display: block;
         height: auto;
+        width: auto;
         grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
         text-align: center; /* Centra el contenido */
     }
