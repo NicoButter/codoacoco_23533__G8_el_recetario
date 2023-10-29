@@ -98,8 +98,9 @@ main {
     transition: transform 0.3s ease-in-out;
     align-items: center;
 }
-.featured-recipe article iframe{
+.latest-recipes article iframe{
     width: 100%;
+    height: 80%;
 }
 .featured-recipe img {
     max-width: 80%;
@@ -315,10 +316,6 @@ main {
 a:link {
     color: #000; /* Cambia el color del enlace no visitado */
     text-decoration: none; /* Elimina el subrayado */
-}
-
-a:visited {
-    color: #faedcd; /* Cambia el color del enlace visitado */
 }
 
 a:hover {
