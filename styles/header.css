@@ -1,6 +1,8 @@
 /*///////////////////////////////////////////// ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 
 .header {
+    position:sticky;
+    top: 0;
     height: 10vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,20 +40,13 @@
 /************************************************************************* Estilos para el header cuando se achica (shrink) *********************************************************************/
 
 .header.shrink {
-    position: fixed;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between; /* Distribuye los elementos a lo largo del encabezado */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 5px 0; /* Reduce el espacio al hacer scroll hacia abajo */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
+    height: 120px; /* Permite que la altura se ajuste automáticamente */
     /*z-index: 5;*/ 
 }
 
 /* Estilo adicional para el título cuando el header se achica  */
 
 .header.shrink .title h1 {
-    position: flex;
     align-items: center;
     color: rgb(31, 49, 2);
     transition: all 0.5s;
