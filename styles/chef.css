@@ -94,15 +94,18 @@
 .receta-imagen {
   overflow: hidden;
   object-position: center;
+  /* object-fit: fill; */
   height: 80%;
-  width: 100%;
+  width: 300px;
   border: 1px solid black;
   transition: all 0.5s ease;
 }
 
 .receta-imagen img{
-  width: 100%;
-  height: auto;
+  width: 300px;
+   height: 100%;
+  object-position: center;
+  object-fit: cover;
   transition: all 0.5s;
 }
 
