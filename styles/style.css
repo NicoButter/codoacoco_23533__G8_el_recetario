@@ -174,9 +174,20 @@ main {
     flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos*/
 }
 
-/* Estilizar el formulario */
+
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////////////// Estilizar el formulario//////////////////////////////////// */
+.contenedor-formulario{
+    display: flex;
+}
+
+
 #formulario-contacto {
-    max-width: 400px; /* Ajusta el ancho máximo del formulario según tu preferencia */
+    max-width: 450px; /* Ajusta el ancho máximo del formulario según tu preferencia */
+    max-height: auto;
     margin: 0 auto; /* Centra horizontalmente el formulario */
 }
   
@@ -222,9 +233,7 @@ main {
     color: #163d30; /* Cambia el color del texto al pasar el mouse */
 }
 
-
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 #product-container {
     display: grid;
