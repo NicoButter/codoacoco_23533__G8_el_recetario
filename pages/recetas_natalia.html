@@ -1,190 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- al tener los archivos de encabezado y pie de página de forma local, no es necesario establecer una URL base externa. -->
-    <!-- <base id="base" href="https://nicobutter.github.io/codoacoco_23533__G8_el_recetario/"/> -->
-    
-    <link rel="stylesheet" href="../styles/style.css" />
+    <!-- Enlace a los stylesheet -->
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../../styles/receta.css">
-
-
+    <link rel="stylesheet" href="../styles/chef.css">
+    <link rel="stylesheet" href="../styles/receta.css">
+    
     <!--Enlace a Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kanit:ital,wght@1,200&family=Open+Sans:wght@300&family=Poppins:wght@100;200;600&display=swap" rel="stylesheet">
     
-    <!-- Enlace a Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="../apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="../apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="../apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="../apple-icon-114x114.png"/>
-    <link rel="apple-touch-icon" sizes="120x120" href="../apple-icon-120x120.png"/>
-    <link rel="apple-touch-icon" sizes="144x144" href="../apple-icon-144x144.png"/>
-    <link rel="apple-touch-icon" sizes="152x152" href="../apple-icon-152x152.png"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-icon-180x180.png"/>
-    <link rel="icon" type="image/png" sizes="192x192" href="../android-icon-192x192.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png"/>
-    <link rel="manifest" href="../manifest.json"/>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+   
+    <!-- TITULO DEL HEAD CON EL NOMBRE DEL CHEF -->
+    <title>Las recetas del 8- Natalia</title>
+</head>
+
+<body>
     
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#ffffff" />
-    
-    <title>Las recetas del 8</title>
-  </head>
-  
-  <body>
-    
-    <!-- El header se carga de forma dinamia -->
-    <header id= "header" class="header"></header>
+    <!-- El header se carga de forma externa -->
+    <header id="header" class="header"></header>
 
     <div class="nav">
-      <nav>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <!-- <li><a href="#">Recetas</a></li> -->
-          <!-- te agregue el enlace a contacto -->
-          <li><a href="../pages/contacto.html">Contacto</a></li> 
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </div>
 
     <main>
+        <section class="chef">      
+           
+            <div class="foto">
+                <img src="../images/foto_natalia.jpeg" alt="foto-natalia">   
+            </div>
+
+            <h2 class="Nombre">Natalia Palmieri</h2>
+            <article>La chef Natalia Palmieri nació en Córdoba Capital en 1980 y desde muy niña observó
+                 cocinar a sus abuelas (italianas) lo cual fue muy enriquecedor y esa curiosidad la llevó
+                 a ser una amante del arte culinario.Trabajo en varios restaurantes del centro de Córdoba
+                 siempre tratando de estar cerca de las cocinas para aprender mas recetas.La pandemia que
+                 nos retrajo a los hogares a todos, en su caso hizo que empezara a incursionar en el tema
+                 de las pizzas y fue así que comenzó a formar su propia masa madre para hacer sus recetas
+                 cada vez más cerca de las recetas perfectas italianas, con sus trucos de cocción y buscando
+                 la combinación de ingredientes y porcentajes exactos para una masa especial.Es asi que hoy
+                 en dia sus recetas son de las más buscadas en el mercado.
+            </article>
+        </section>
+
+        <section class="listado-recetas"> 
+            <h2 class="titulo">Recetas especiales italianas</h2>
+            <div class="receta">
+                <a href="../pages/Natalia/bianca.html">
+                    <div class="receta-imagen"><img src="../images/BIANCA.jpeg" alt="pizza bianca"></div>  
+                    <div class="receta-nombre">Pizza Bianca
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>  
+                </a>
+            </div>
+
+            <div class="receta">
+                <a href="../pages/Natalia/focaccia.html">
+                    <div class="receta-imagen"><img src="../images/FOCACCIA.jpeg" alt="Pizza focaccia"></div>  
+                    <div class="receta-nombre">Pizza Focaccia
+                        <div class="receta-cuadro">Ver receta</div>
+                    </div>    
+                </a>
+            </div>
+
+            <div class="receta">
+                <a href="../pages/Natalia/roquefort.html">
+                    <div class="receta-imagen"><img src="../images/ROQUEFORT.jpeg" alt="Pizza roquefort"></div>         
+                    <div class="receta-nombre">Pizza Roquefort
+                      <div class="receta-cuadro">Ver receta</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+       
         
-    <section>
-        
-        <h2>Pizza Focaccia</h2>
-
-        <img src="../images/FOCACCIA.jpeg" alt="">
-        <h2>Ingredientes</h2>
-        <h3>Para la masa</h3>
-         <ul>
-             <li>Harina 000/0000 300 g.</li>
-             <li>Semolín o sémola 200 g (si queres podes usar solo harina).</li>
-             <li>Sal 10 g (1 cda al raz).</li>
-             <li>Levadura fresca 10 g (si usas seca son 3/4 g).</li>
-             <li>Agua 300 cc aprox.</li>
-             <li>Aceite de oliva 50 cc como máximo.</li>
-         </ul>
-         <h3>Version 1</h3>
-         <ul>
-            <li>Cebolla morada cortada en juliana.</li>
-            <li>Romero.</li>
-            <li>Sal y pimienta.</li>
-            <li>Agua fría c/n.</li>
-            <li>Queso mozzarella c/n.</li>
-            <li>Aceitunas negras descarozadas.</li>
-            <li>Tomates cherrys.</li>
-         </ul>
-         <h3>Version 2</h3>
-         <ul>
-            <li>Mayonesa.</li>
-            <li>Jamón crudo.</li>
-            <li>Queso en fetas.</li>
-         </ul>
-         <h2>Procedimiento</h2>
-         <p>
-            1. Para la masa: en un bowl, poner la harina, el semolín y la sal. Mezclar para unificar. Agregar la levadura, mezclar y agregar el agua en el centro. Unificar todo, amasar y agregar un poco de aceite que le va muy bien 😉. Seguir amasando hasta que te quede lisa y tierna.
-
-            2. Con un poco de aceite de oliva en la asadera, poner a leudar la masa tapada.
-
-            3. Estirar la masa y agregarle unos chorritos más de aceite por encima.
-
-            4. Para la primer versión de sanguche 1️⃣: agregarle la cebolla morada, el romero, condimentar con sal y pimienta. A último momento, la podés rociar con agua para que quede bien crocante! 👌. Cocinar en un horno a 190ºC (entre moderado y fuerte) 🔥 por media hora aprox.
-
-            5. Cuando esté lista, cortar por el medio para poder rellenar con queso mozzarella 🧀, las aceitunas y los tomates cherrys. Tapar con la otra masa y llevar al horno hasta que se derrita el queso 🔥.
-
-            6. Para la segunda versión 2️⃣: Untar dos mitades de focaccia ya cocinada y fría con mayonesa, jamón crudo y queso en fetas.
-            Que los disfrutes! 🥪🇮🇹.
-         </p>
-
-    </section>
-
-    <section>
-        <h2>Pizza Bianca</h2>
-        <img src="../images/BIANCA.jpeg" alt="">
-        <h2>Ingredientes</h2>
-        <h3>Para la masa</h3>
-        <ul>
-            <li>370 gr de harina de trigo común</li>
-            <li>220 ml de agua tibia</li>
-            <li>3 gr levadura fresca</li>
-            <li>2 cda de aceite</li>
-            <li>1 cda de sal</li>
-        </ul>
-        <h3>Para el relleno</h3>
-        <ul>
-            <li>150 gr de mozzarella búfala</li>
-            <li>70 gr de queso cabra</li>
-            <li>1 cebolla blanca</li>
-            <li>70 gr de tocineta</li>
-            <li>1 cda de salvia</li>
-            <li>1 cda de orégano</li>
-            <li>1 cda de pimienta</li>
-        </ul>
-        <h2>Procedimiento</h2>
-        <p>Preparemos la masa:
-            En un bol, agrega el harina y la sal y la levadura, revuelve hasta incorporar los ingredientes secos.
-            Abre un espacio en el medio, tipo volcán para añadir el aceite y el agua.
-            Iniciemos a amasar con las manos hasta lograr una masa homogénea y suave.
-            Pasemos nuestra masa a la encimera de la cocina previamente enharinada para estirar muy bien y lograr una textura muy manejable. Haz de tu masa una bola y guárdala en un bol para dejar levar por 1 hora.
-            Armemos nuestra pizza bianca:
-            Mientras la masa temina de levar, vas a rallar los quesos por separado y reservarás.
-            Corta la cebolla en julianas y la tocineta en tiras.
-            Precalienta tu horno a 180° grados centígrados.
-            Toma tu masa y vamos a estirar muy bien hasta tener una base bien delgada. Le darás forma a tu base de acuerdo al modelo de tu bandeja, si es redonda o cuadrada. Te recomiendo que sea redonda para mantener la tradición.
-            Una vez estirada tu masa, la colocarás encima de la bandeja y retirarás los excesos de masa.
-            Esparce el queso mozzarella en toda la superficie de la pizza.
-            Luego añadirás la cebolla y la tocineta cortada.
-            Vas a esparcir todos los condimentos por toda la superficie.
-            Posteriormente, cubrirás con el queso de cabra.
-            Llevemos nuestra pizza bianca al horno por 15 minutos hasta que el queso esté derretido, la salsa se haya adherido a la base y la masa esté completamente crujiente.
-            ¡Listo! Hemos terminado nuestra pizza bianca puedes degustarla.
-            TRUCOS PARA TU PIZZA BIANCA
-            Para que tu pizza bianca sea aún más deliciosa, puedes añadirle queso parmesano o pecorino para intensificar su sabor. Esa combinación con el resto de los quesos será sensacional. Asimismo, atrévete a añadirle a la superficie de tu pizza bianca rúcula, prosciutto, jamón e incluso espinacas o champiñones.
-
-        </p>
-    </section>
-
-    <section>
-        <h2>Pizza Roquefort</h2>
-        <img src="../images/ROQUEFORT.jpeg" alt="">
-        <h2>Ingredientes</h2>
-        <h3>Ingredientes para dos personas</h3>
-        <ul>
-            <li>250g de masa de pizza</li>
-            <li>100g de queso roquefort</li>
-            <li>100g de queso mozzarella</li>
-            <li>una cebolla chica</li>
-            <li>un jitomate</li>
-            <li>250ml de crema</li>
-            <li>8 a 10 aceitunas verdes</li>
-            <li>sal y pimienta negra molida.</li>
-        </ul>
-        <h2>Procedimiento</h2>
-        <p>Para hacer esta pizza van a extender la masa para darle una forma rectangular. Si no tiene molde de esta forma pueden usar cualquier otra. Pican la cebolla así como el jitomate al que van a retirar las semillas. Ahora van a mezclar en una ensaladera la crema con la cebolla y el jitomate. Sazonan con sal y pimienta.
-
-            Pican el queso roquefort y el mozzarella. Añaden el primero a los otros ingredientes y revuelven muy bien. Vierten esta preparación sobre la masa de tal manera que la van a recubrir completamente. Esparcen ahora el queso mozzarella y acomodan las aceitunas verdes. Hornean por unos 35 minutos, a 180ºC, hasta que la masa esté cocida y el queso gratinado.
-            ¡A disfrutar!
-        </p>
-
-    </section>
-
     </main>
 
-    <!-- El footer se carga de forma dinamica -->
+    <!-- El footer se carga de forma externa -->
     <footer id="footer"></footer>
 
-    <script src="../js/main.js"></script>
     <!-- Enlaza el archivo JavaScript -->
-  </body>
+    <script src="../js/main.js"></script>
+
+</body>
 </html>
