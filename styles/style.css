@@ -116,7 +116,9 @@ main {
 }
 
 .featured-recipe iframe {
-    height: 350px;
+    width: 500px;
+    height:400px;
+
 }
 
 .featured-recipe .recipe-media h3 {
@@ -136,51 +138,62 @@ main {
 
 .latest-recipes {
     display: flex;
-    /*flex-direction: column; /* Coloca los elementos en una columna*/ 
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.latest-recipes img {
-    max-width: 80%;
-    height: auto;
-}
-
-.latest-recipes article {
+  }
+  
+  .latest-recipes article {
     flex: 0 0 calc(50% - 20px);
     margin-bottom: 20px;
-    background-color: #FEFAE0; 
+    background-color: #FEFAE0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Agrega esta línea para que los elementos dentro del artículo sean flexibles */
+    flex-direction: column; /* Alinea los elementos internos en una columna */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos internos */
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+  }
+  
+  .latest-recipes article:hover {
+    transform: scale(1.07);
+  }
+  
+  .latest-recipes h2 {
+    font-size: 80px;
+    box-sizing: border-box;
+  }
+  
+  .latest-recipes .recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .latest-recipes .recipe-container a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .latest-recipes .recipe-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .latest-recipes article.mapa {
+    flex: 1 0 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px;
+    background-color: #FEFAE0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     align-items: center;
+    height: 450px;
 }
-
-.latest-recipes article:hover {
-    transform: scale(1.07);
-}
-
-.latest-recipes h2 {
-    font-size: 80px;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
-}
-
-.latest-recipes .recipe-container {
-    display: flex; /* Utiliza flexbox para alinear los artículos en fila */
-    flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila */
-    justify-content: space-between; /* Distribuye los artículos con espacio entre ellos */
-    gap: 20px; /* Espacio entre los artículos */
-}
-
-.latest-recipes article {
-    flex-basis: calc(50% - 10px); /* Ocupa la mitad del ancho disponible con espacio entre ellos*/
-}
-
-
-
-
 
 
 /* /////////////////////////////////////////////////////////////////////////////////// Estilizar el formulario//////////////////////////////////// */
+
 .contenedor-formulario{
     display: flex;
 }
@@ -385,19 +398,30 @@ a:active {
 
 
 @media (max-width: 768px) {
+    
     .featured-recipe article {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
+    
     .latest-recipes h2 {
         font-size: 60px;
     }
+    
     .latest-recipes article {
         flex: 0 0 calc(100% - 20px); /* Cambia a una columna completa en pantallas pequeñas */
     }
+    
     nav {
         top: -20px; /* Ajusta la posición hacia arriba en 50px (ajusta el valor según tus necesidades) */
     }
+    
     .featured-recipe h2 {
         font-size: 60px;
+    }
+
+    .featured-recipe iframe {
+        width: 250px;
+        height:200px;
+    
     }
 }

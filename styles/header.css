@@ -75,7 +75,7 @@
     border-radius: 50%; /* radio de borde del 50% para que la imagen sea redonda */
     object-fit: cover; /* Ajusta la imagen dentro del espacio redondo */
     z-index: 1;
-    margin: 5px;
+    margin: 2px;
 }
 
 .header.shrink .redes-sociales .nombres {
@@ -215,8 +215,11 @@
         z-index: 1;
     }
 }
+
 /* Pantallas más pequeñas, como dispositivos móviles */
+
 @media (max-width: 600px) {
+   
     .header {
         display: block;
         height: auto;
@@ -224,6 +227,7 @@
         grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
         text-align: center; /* Centra el contenido */
     }
+
     .header.shrink {
         grid-template-columns: 1fr;
         height: 220px;
@@ -233,9 +237,10 @@
     .redes-sociales {
         margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos */
     }
+
     .header.shrink .redes-sociales {
-        margin-right: 40px;
-        margin-left: 20px;
+        margin-right: 10px;
+        margin-left: 5px;
     }
     
     .header .title h1 {
