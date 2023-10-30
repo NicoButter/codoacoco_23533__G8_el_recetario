@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
                             <h2>${product.product_name}</h2>
                             <img src="${product.image_url}" alt="${product.product_name}">
                             <p>${product.generic_name}</p>
-                            <!-- Agrega más detalles aquí -->
                         </div>
+                        <h3>detalles del producto</h3>
                     `;
                     productContainer.appendChild(productButton);
                 });
@@ -63,16 +63,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 return response.json();
             })
             .then((data) => {
-                // Aquí puedes crear la estructura de detalles del producto en el modal
+                // Crea la estructura de detalles del producto en el modal
+                const productInfo = data.product;
+
                 const productTitle = document.createElement("h2");
-                productTitle.textContent = data.product.product_name;
+                productTitle.textContent = productInfo.product_name;
+
+                const productImage = document.createElement("img");
+                productImage.src = productInfo.image_url;
+                productImage.alt = productInfo.product_name;
+
                 // Agrega más detalles según tus necesidades
+                const productDescription = document.createElement("p");
+                productDescription.textContent = productInfo.generic_name;
 
                 // Limpia cualquier contenido previo en el modal
                 productDetailsInModal.innerHTML = "";
 
                 // Agrega los detalles al modal
                 productDetailsInModal.appendChild(productTitle);
+                productDetailsInModal.appendChild(productImage);
+                productDetailsInModal.appendChild(productDescription);
 
                 // Abre el modal
                 productModal.style.display = "block";

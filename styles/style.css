@@ -260,15 +260,6 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
     gap: 20px; /* Espacio entre productos */
-
-
-
-    /* display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap;  
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 20px; */
 }
 
 .product {
@@ -431,3 +422,18 @@ a:active {
         grid-template-columns: auto auto;
     }
   } 
+
+/* Estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Ajusta el ancho del modal para pantallas pequeñas */
+        padding: 10px; /* Reduce el espacio interior del modal */
+    }
+}
+
+/* Otros estilos para pantallas más grandes si es necesario */
+@media (min-width: 992px) {
+    .modal-content {
+        width: 70%; /* Ajusta el ancho del modal para pantallas grandes */
+    }
+}
