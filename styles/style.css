@@ -14,9 +14,14 @@ body {
 }
 
 /*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
-
+.navegacion{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-family: Poppins,sans-serif;
+  }
 .nav {
     /* position: sticky; */
+    grid-column: 1/4;
     top: 0px; /* Fija el nav en la parte superior de la ventana */
     left: 0; /*Fija el nav en la parte izquierda de la ventana*/
     width: 100%; /* Ocupa todo el ancho de la ventana */
@@ -26,7 +31,7 @@ body {
 .nav ul {
     color: #000;
     list-style-type: none;
-    text-align: center;
+    text-align: end;
 }
 
 .nav li {
@@ -377,28 +382,6 @@ a:active {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     
     .featured-recipe article {
@@ -424,6 +407,14 @@ a:active {
     .featured-recipe iframe {
         width: 250px;
         height:200px;
-    
+    }
+    .navegacion{
+        grid-template-columns: auto;
+      }
+    .nav {
+        grid-column: 1/1;
+    }
+    .nav ul {
+        text-align: center;
     }
 }
