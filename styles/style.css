@@ -410,6 +410,7 @@ a:active {
     }
     .navegacion{
         grid-template-columns: auto;
+        justify-content: center;
       }
     .nav {
         grid-column: 1/1;
@@ -417,4 +418,16 @@ a:active {
     .nav ul {
         text-align: center;
     }
+    .productos h3{
+        display: none;
+    }
+    #product-container {
+        grid-template-columns: auto;
+    }
+
 }
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #product-container {
+        grid-template-columns: auto auto;
+    }
+  } 
