@@ -123,7 +123,7 @@ document.getElementById("formulario-contacto").addEventListener("submit", functi
 });
 
 function mostrarMensaje() {
-    // Puedes personalizar el mensaje aquí
+    // Aca personalizar el mensaje
     alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo muy pronto.");
 }
 
