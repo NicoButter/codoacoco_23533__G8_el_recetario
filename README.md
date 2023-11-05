@@ -1,51 +1,75 @@
-Codo a Codo - Grupo 8 – Comisión 23533.
-Natalia Palmieri
-Sabrina Fleita
-Pablo Iglesias
-Nicolás Butterfield
-Documentación de "Las Recetas del 8"
-Descripción del Sitio
-"Las Recetas del 8" es un sitio web que ofrece una amplia colección de recetas de cocina, destacando a diversos chefs y sus especialidades. El sitio proporciona a los visitantes una experiencia culinaria única y variada, con un enfoque en la cocina patagónica y regional de Argentina.
-Estructura del Sitio
-El sitio se organiza en varias páginas interconectadas que permiten a los usuarios explorar diferentes aspectos de la cocina patagónica y las creaciones culinarias de varios chefs. La estructura principal incluye:
-    1. Página de Inicio:
-        ? Página principal que da la bienvenida a los visitantes y presenta recetas destacadas del día.
+# Codo a Codo - Grupo 8 ï¿½ Comisiï¿½n 23533.
+
+## Natalia Palmieri
+## Sabrina Fleita
+## Pablo Iglesias
+## Nicolï¿½s Butterfield
+
+# Documentaciï¿½n de "Las Recetas del 8"
+
+## Descripciï¿½n del Sitio
+
+"Las Recetas del 8" es un sitio web que ofrece una amplia colecciï¿½n de recetas de cocina, destacando a diversos chefs y sus especialidades. El sitio proporciona a los visitantes una experiencia culinaria ï¿½nica y variada, con un enfoque en la cocina patagï¿½nica y regional de Argentina.
+
+##Estructura del Sitio
+
+El sitio se organiza en varias pï¿½ginas interconectadas que permiten a los usuarios explorar diferentes aspectos de la cocina patagï¿½nica y las creaciones culinarias de varios chefs. La estructura principal incluye:
+    
+    1. Pï¿½gina de Inicio:
+        ? Pï¿½gina principal que da la bienvenida a los visitantes y presenta recetas destacadas del dï¿½a.
         ? Enlaces a otras secciones del sitio, como "Contacto".
-    2. Páginas de Chef (Nicolas, Sabrina, Natalia, Pablo):
-        ? Cada página de chef ofrece información detallada sobre un chef en particular, incluyendo su biografía y recetas especiales.
+    2. Pï¿½ginas de Chef (Nicolas, Sabrina, Natalia, Pablo):
+        ? Cada pï¿½gina de chef ofrece informaciï¿½n detallada sobre un chef en particular, incluyendo su biografï¿½a y recetas especiales.
     3. Recetas de Chef:
-        ? Cada página de chef incluye una lista de recetas exclusivas asociadas al chef en cuestión.
-    4. Página de Contacto:
-        ? Ofrece información de contacto para los visitantes que desean comunicarse con el sitio web.
-Páginas Principales
-Página de Inicio
-    • URL: /index.html
-    • Descripción: La página de inicio da la bienvenida a los visitantes y muestra recetas destacadas del día. También proporciona enlaces a otras secciones y una barra de búsqueda de productos.
-      Funcionalidades Especiales:
-        ? Utilización de iframes para incrustar contenido multimedia, como videos de recetas.
-      Transiciones del Header:
-        ? La función shrink permite una transición suave para encoger el tamaño del header al hacer scroll hacia abajo, proporcionando un efecto visual agradable.
-Páginas de Chef (Nicolas, Sabrina, Natalia, Pablo)
-    • URL: /pages/chef.html
-    • Descripción: Cada página de chef presenta una breve biografía y una galería de recetas especiales relacionadas con ese chef en particular. Los enlaces de navegación están disponibles en la parte superior de la página.
-Página de Contacto
-    • URL: /pages/contacto.html
-    • Descripción: La página de contacto proporciona información para que los visitantes se comuniquen con el sitio web.
-Documentación Detallada de Página
-Página de Chef (Nicolás)
-    • URL: /pages/chef/nicolas.html
-    • Descripción: Esta página destaca al chef Nicolás Butterfield y muestra su biografía y sus recetas especiales de la Patagonia.
-Página de Receta (Ejemplo: Brochet de Guanaco)
-    • URL: /pages/recetas_nicolas/brochet-guanaco.html
-    • Descripción: Cada página de receta ofrece detalles sobre una receta específica, que incluye imágenes y descripciones detalladas de los pasos para su preparación.
-Metadatos y Enlaces Importantes
-    • Se utilizan metadatos en cada página para definir la codificación del documento y la escala para dispositivos móviles.
-    • Los estilos y fuentes se vinculan a través de enlaces <link> para garantizar una presentación uniforme y legible del contenido.
-    • Se cargan encabezados y pies de página de forma externa para mejorar la eficiencia y facilitar futuras actualizaciones.
-Notas Adicionales
-    • El sitio se enfoca en la cocina patagónica y regional de Argentina.
-    • Las recetas y biografías de chefs se actualizan regularmente para mantener el contenido fresco y atractivo.
-    • El sitio web utiliza imágenes atractivas y descriptivas para ilustrar las recetas y chefs.
-    • La navegación se facilita mediante enlaces bien organizados y una barra de búsqueda.
-¡Esperamos que disfrutes explorando "Las Recetas del 8" y descubriendo las delicias culinarias que ofrece! Si deseas obtener más información o comunicarte con el sitio, visita nuestra página de contacto.
+        ? Cada pï¿½gina de chef incluye una lista de recetas exclusivas asociadas al chef en cuestiï¿½n.
+    4. Pï¿½gina de Contacto:
+        ? Ofrece informaciï¿½n de contacto para los visitantes que desean comunicarse con el sitio web.
+
+## Pï¿½ginas Principales
+
+### Pï¿½gina de Inicio
+
+    ï¿½ URL: /index.html
+    ï¿½ Descripciï¿½n: La pï¿½gina de inicio da la bienvenida a los visitantes y muestra recetas destacadas del dï¿½a. Tambiï¿½n proporciona enlaces a otras secciones y una barra de bï¿½squeda de productos.
+      ### Funcionalidades Especiales:
+        ? Utilizaciï¿½n de iframes para incrustar contenido multimedia, como videos de recetas.
+      ### Transiciones del Header:
+        ? La funciï¿½n shrink permite una transiciï¿½n suave para encoger el tamaï¿½o del header al hacer scroll hacia abajo, proporcionando un efecto visual agradable.
+
+## Pï¿½ginas de Chef (Nicolas, Sabrina, Natalia, Pablo)
+
+    ï¿½ URL: /pages/chef.html
+    ï¿½ Descripciï¿½n: Cada pï¿½gina de chef presenta una breve biografï¿½a y una galerï¿½a de recetas especiales relacionadas con ese chef en particular. Los enlaces de navegaciï¿½n estï¿½n disponibles en la parte superior de la pï¿½gina.
+
+## Pï¿½gina de Contacto
+
+    ï¿½ URL: /pages/contacto.html
+    ï¿½ Descripciï¿½n: La pï¿½gina de contacto proporciona informaciï¿½n para que los visitantes se comuniquen con el sitio web.
+
+## Documentaciï¿½n Detallada de Pï¿½gina
+
+### Pï¿½gina de Chef (Nicolï¿½s)
+
+    ï¿½ URL: /pages/chef/nicolas.html
+    ï¿½ Descripciï¿½n: Esta pï¿½gina destaca al chef Nicolï¿½s Butterfield y muestra su biografï¿½a y sus recetas especiales de la Patagonia.
+
+### Pï¿½gina de Receta (Ejemplo: Brochet de Guanaco)
+
+    ï¿½ URL: /pages/recetas_nicolas/brochet-guanaco.html
+    ï¿½ Descripciï¿½n: Cada pï¿½gina de receta ofrece detalles sobre una receta especï¿½fica, que incluye imï¿½genes y descripciones detalladas de los pasos para su preparaciï¿½n.
+
+### Metadatos y Enlaces Importantes
+
+    ï¿½ Se utilizan metadatos en cada pï¿½gina para definir la codificaciï¿½n del documento y la escala para dispositivos mï¿½viles.
+    ï¿½ Los estilos y fuentes se vinculan a travï¿½s de enlaces <link> para garantizar una presentaciï¿½n uniforme y legible del contenido.
+    ï¿½ Se cargan encabezados y pies de pï¿½gina de forma externa para mejorar la eficiencia y facilitar futuras actualizaciones.
+
+### Notas Adicionales
+
+    ï¿½ El sitio se enfoca en la cocina patagï¿½nica y regional de Argentina.
+    ï¿½ Las recetas y biografï¿½as de chefs se actualizan regularmente para mantener el contenido fresco y atractivo.
+    ï¿½ El sitio web utiliza imï¿½genes atractivas y descriptivas para ilustrar las recetas y chefs.
+    ï¿½ La navegaciï¿½n se facilita mediante enlaces bien organizados y una barra de bï¿½squeda.
+
+# ï¿½Esperamos que disfrutes explorando "Las Recetas del 8" y descubriendo las delicias culinarias que ofrece! Si deseas obtener mï¿½s informaciï¿½n o comunicarte con el sitio, visita nuestra pï¿½gina de contacto.
 
