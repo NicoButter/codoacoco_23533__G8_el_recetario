@@ -31,9 +31,9 @@ El sitio se organiza en varias páginas interconectadas que permiten a los usuar
 
     - URL: /index.html
     - Descripción: La página de inicio da la bienvenida a los visitantes y muestra recetas destacadas del día. También proporciona enlaces a otras secciones y una barra de búsqueda de productos.
-      ### Funcionalidades Especiales:
+       Funcionalidades Especiales:
         - Utilización de iframes para incrustar contenido multimedia, como videos de recetas.
-      ### Transiciones del Header:
+       Transiciones del Header:
         - La función shrink permite una transición suave para encoger el tamaño del header al hacer scroll hacia abajo, proporcionando un efecto visual agradable.
 
 ## Páginas de Chef (Nicolas, Sabrina, Natalia, Pablo)
