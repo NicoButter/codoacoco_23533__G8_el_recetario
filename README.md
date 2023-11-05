@@ -1,4 +1,4 @@
-# Codo a Codo - Grupo 8 - Comisi�n 23533.
+# Codo a Codo - Grupo 8 - Comisión 23533.
 
 ## Natalia Palmieri
 ## Sabrina Fleita
