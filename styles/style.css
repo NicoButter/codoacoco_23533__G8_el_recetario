@@ -373,6 +373,27 @@ a:active {
     cursor: pointer;
 }
 
+/* Estilos para el boton que va al CRUD Django*/
+.btn-django-crud {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 2px solid #2980b9; /* Borde del botón */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición */
+}
+
+.btn-django-crud:hover {
+    background-color: #2980b9; /* Cambia el color de fondo en el hover */
+    color: #fff; /* Cambia el color del texto en el hover */
+}
+
+
 @media (max-width: 768px) {
     
     .featured-recipe article {
