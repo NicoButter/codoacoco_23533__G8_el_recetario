@@ -26,6 +26,7 @@
     object-position: center;
     transition: all 0.3s;
 }
+
 /* Estilos para el título dentro del encabezado */
 
 .header .title h1 {
@@ -82,7 +83,8 @@
     opacity: 0;
     display: none;
 }
-/**************************** Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacena a los likedin de cadaa uno ***********************/
+
+/**************************** Estilo para los links de las redes sociales que en realidad no son redes sociales, la idea es que luego enlacen a las recetas de cada uno **********/
 
 .header .redes-sociales {
     margin-top: 30px;
@@ -248,94 +250,3 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  /* Extra small devices (phones, 600px and down) 
-  @media only screen and (max-width: 600px) {
-    .header {
-        grid-template-columns: auto;
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
-        height: 350px;
-        width: auto;
-    }
-    .header .title h1 {
-        font-size: 20px;
-    }
-}
-  
-  /* Small devices (portrait tablets and large phones, 600px and up to 768px) 
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    .header {
-        grid-template-columns: auto;
-        text-align: center;
-    }
-
-    .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
-        height: 350px;
-        width: auto;
-    }
-    .header .title h1 {
-        font-size: 20px;
-    }
-
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up to 992px) 
-  @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .redes-sociales {
-        margin-top: 20px; /* Añade espacio entre las redes sociales y otros elementos 
-        height: 350px;
-        width: auto;
-    }
-    .header .title h1 {
-        font-size: 30px;
-    }
-  } 
-  
-  /* Large devices (laptops/desktops, 993px and up to 1200px) 
-  @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) 
-  @media only screen and (min-width: 1201px) {
-    
-  }*/
