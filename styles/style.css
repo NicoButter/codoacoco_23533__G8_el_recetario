@@ -5,7 +5,6 @@
   }
 
 body {
-    /* font-family: 'Comfortaa', cursive; */
     font-family: Poppins,sans-serif;
     margin: 0;
     padding: 0;
@@ -13,18 +12,16 @@ body {
     box-sizing: border-box;
 }
 
-/*///////////////////////////////////////////// FIN ESTILOS PARA EL HEADER ////////////////////////////////////////////////////////////*/
 .navegacion{
     display: grid;
     grid-template-columns: auto auto auto auto;
     font-family: Poppins,sans-serif;
   }
 .nav {
-    /* position: sticky; */
     grid-column: 1/4;
-    top: 0px; /* Fija el nav en la parte superior de la ventana */
-    left: 0; /*Fija el nav en la parte izquierda de la ventana*/
-    width: 100%; /* Ocupa todo el ancho de la ventana */
+    top: 0px; 
+    left: 0; 
+    width: 100%; 
     background-color: #FEFAE0;
 }
 
@@ -59,12 +56,12 @@ body {
 }
 
 #search-form {
-    display: flex; /* Esto coloca el formulario en línea con los elementos anteriores */
+    display: flex; 
     margin-right:20px;
 }
 
 #search-input {
-    margin-right: 10px; /* Agrega un espacio entre el campo de entrada y el botón */
+    margin-right: 10px; 
     margin-right:20px;
 }
 
@@ -80,18 +77,14 @@ main {
 
 .featured-recipe {
     display: flex;
-    /*flex-direction: column; /* Coloca los elementos en una columna*/
     flex-wrap: wrap;
     justify-content: space-between;
-    /*align-items: center;*/
 }
 
 .featured-recipe h2 {
-    /*font-size: 5em;*/
     max-width: 100%;
     max-height: 100%;
     font-size: 80px;
-    /* flex: 1;*/ 
     box-sizing: border-box; /* Incluye el padding y el borde en el ancho total*/ 
 }
 
@@ -137,10 +130,10 @@ main {
 }
 
 .featured-recipe .recipe-content {
-    display: flex; /* Utiliza flexbox para alinear los artículos en fila*/ 
-    flex-wrap: wrap; /* Permite que los artículos se envuelvan en una nueva fila si no caben en una sola fila*/ 
-    justify-content: space-between; /* Distribuye los artículos con espacio entre ellos*/ 
-    gap: 20px; /* Espacio entre los artículos */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between;  
+    gap: 20px; 
 }
 
 .latest-recipes {
@@ -154,12 +147,12 @@ main {
     background-color: #FEFAE0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    display: flex; /* Agrega esta línea para que los elementos dentro del artículo sean flexibles */
-    flex-direction: column; /* Alinea los elementos internos en una columna */
-    justify-content: space-between; /* Distribuye el espacio entre los elementos internos */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     align-items: center;
     padding: 20px;
-    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    box-sizing: border-box; 
   }
   
   .latest-recipes article:hover {
@@ -198,13 +191,11 @@ main {
     height: 450px;
 }
 
-
 /* /////////////////////////////////////////////////////////////////////////////////// Estilizar el formulario//////////////////////////////////// */
 
 .contenedor-formulario{
     display: flex;
 }
-
 
 #formulario-contacto {
     max-width: 450px; /* Ajusta el ancho máximo del formulario según tu preferencia */
@@ -212,14 +203,12 @@ main {
     margin: 0 auto; /* Centra horizontalmente el formulario */
 }
   
-  /* Estilizar los labels */
 #formulario-contacto label {
     display: block; /* Hace que los labels ocupen una línea completa */
     margin-bottom: 5px; /* Agrega un pequeño espacio entre los labels y los inputs */
     font-weight: bold; /* Aplica negritas a los labels */
   }
   
-  /* Estilizar los inputs de texto y email */
 #formulario-contacto input[type="text"],
 #formulario-contacto input[type="email"] {
     width: 100%; /* Los inputs ocuparán todo el ancho del contenedor */
@@ -229,7 +218,6 @@ main {
     border-radius: 5px; /* Aplica bordes redondeados a los inputs */
 }
   
-/* Estilizar el textarea */
 #formulario-contacto textarea {
     width: 100%; /* El textarea ocupará todo el ancho del contenedor */
     padding: 10px; /* Agrega relleno para dar espacio dentro del textarea */
@@ -238,7 +226,6 @@ main {
     border-radius: 5px; /* Aplica bordes redondeados al textarea */
 }
   
-  /* Estilizar el botón de enviar */
 #formulario-contacto button[type="submit"] {
     background-color: #163d30; /* Cambia el color de fondo del botón según tu preferencia */
     color: #faedcd; /* Cambia el color del texto del botón según tu preferencia */
@@ -248,7 +235,6 @@ main {
     cursor: pointer; /* Cambia el cursor al pasar el mouse por el botón */
 }
   
-/* Estilizar el botón de enviar al pasar el mouse */
 #formulario-contacto button[type="submit"]:hover {
     background-color: #faedcd; /* Cambia el color de fondo al pasar el mouse */
     color: #163d30; /* Cambia el color del texto al pasar el mouse */
@@ -294,7 +280,6 @@ main {
     text-align: center;
 }
 
-
 #product-container div:hover {
     transform: scale(1.05);
 }
@@ -309,12 +294,9 @@ main {
 #product-container h2 {
     max-height: 4em; /* Altura máxima de tres líneas */
     overflow: hidden;
-    /* text-overflow: ellipsis; */
-    /* white-space: nowrap; */
     text-align: center;
     font-size: 1.5rem;
-    margin: 10px 0; /* Espacio entre el título y otros detalles*/ 
-    
+    margin: 10px 0; 
 }
 
 #product-container p {
@@ -381,16 +363,16 @@ a:active {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    background-color: #3498db; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
+    background-color: #FEFAE0; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
     border-radius: 5px; /* Bordes redondeados */
-    border: 2px solid #2980b9; /* Borde del botón */
+    border: 2px solid #CCD5AE; /* Borde del botón */
     transition: background-color 0.3s ease, color 0.3s ease; /* Efecto de transición */
 }
 
 .btn-django-crud:hover {
-    background-color: #2980b9; /* Cambia el color de fondo en el hover */
-    color: #fff; /* Cambia el color del texto en el hover */
+    background-color: greenyellow; /* Cambia el color de fondo en el hover */
+    color: #000; /* Cambia el color del texto en el hover */
 }
 
 

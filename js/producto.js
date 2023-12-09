@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 data.products.forEach(product => {
                     const productContainer = document.getElementById("product-container");
                 
-                    // Crea un elemento de botón para mostrar detalles en el modal
+                    // Aca crea un elemento de botón para mostrar detalles en el modal
                     const productButton = document.createElement("button");
                     productButton.classList.add("product-button");
                     productButton.setAttribute("data-product-id", product._id);
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     productContainer.addEventListener("click", function (event) {
         const target = event.target;
         if (target.classList.contains("product-button")) {
-            // Obtiene el ID del producto desde el atributo "data-product-id" del botón
+            // Aca se obtiene el ID del producto desde el atributo "data-product-id" del botón
             const productID = target.getAttribute("data-product-id");
             if (productID) {
                 getProductDetails(productID);
@@ -105,7 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Cierra el modal cuando se hace clic en el botón de cierre
     closeModalButton.addEventListener("click", function () {
         productModal.style.display = "none";
     });
